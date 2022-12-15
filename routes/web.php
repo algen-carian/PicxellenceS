@@ -61,7 +61,7 @@ Route::get('/userdashboard',[userdashboardController::class, 'index']);
 
 //USERSIGNUPFORM
 Route::get('/signupform',[signupformController::class, 'index']);
-Route::post('/Registeracc',[signupformController::class, 'store']);
+Route::post('/Registeracc',[signupformController::class, 'store'])->name("Registeracc");
 
 
 //ADMINLOGIN

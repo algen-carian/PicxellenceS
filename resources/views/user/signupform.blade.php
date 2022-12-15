@@ -11,13 +11,13 @@
    </head>
    
 <body>
-
-
-
   <div class="container">
     <div class="title">Registration</div>
     <div class="content">
-      <form action="#">
+
+      <form  method="POST" action="{{ route('Registeracc') }}" method="POST" >
+      @csrf
+
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
@@ -33,11 +33,11 @@
           </div>
           <div class="input-box">
             <span class="details">Contact</span>
-            <input type="text" placeholder="Enter your username" name = "contact" required>
+            <input type="number"  placeholder="Enter your username" name = "contact" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" name = "email" required>
+            <input type="email" placeholder="Enter your email" name = "email" required>
           </div>
           <div class="input-box">
             <span class="details">Address</span>
@@ -45,7 +45,7 @@
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Confirm your password" name = "password" required>
+            <input type="password" placeholder="Confirm your password" name = "password" required>
           </div>
         </div>
 
@@ -70,7 +70,7 @@
           </div>
         <div class="button">
           <input type="submit" value="Register">
-          <a href = "/adminlogin" style = "text-decoration: none; color: #fff;">Picxellence</a>
+          <buttton type="submit" style = "text-decoration: none; color: #fff;">Picxellence</button>
       </form>
       <br><br>
       </div>
