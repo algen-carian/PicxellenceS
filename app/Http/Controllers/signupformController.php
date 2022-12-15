@@ -32,7 +32,7 @@ class signupformController extends Controller
                 "address"=> $request->email,
                 'password' => Hash::make($request->password),
             ]);
-            return redirect('/signupform');
+            return redirect('/');
             Auth::attempt($request->only('email', 'password'));
     }
 }

@@ -115,7 +115,7 @@ Route::get('/adminabout',[adminaboutController::class, 'index']);
 
 //USERSIGNUPFORM
 Route::get('/signupform',[signupformController::class, 'index']);
-Route::post('/Registeracc',[signupformController::class, 'store'])->name("Registeracc");
+Route::post('/Register',[signupformController::class, 'store'])->name("Register");
 
 
 //USERDASHBOARD

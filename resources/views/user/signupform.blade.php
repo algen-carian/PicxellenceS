@@ -15,7 +15,7 @@
     <div class="title">Registration</div>
     <div class="content">
 
-      <form  method="POST" action="{{ route('Registeracc') }}" method="POST" >
+      <form  method="POST" action="{{ route('Register') }}" method="POST" >
       @csrf
 
         <div class="user-details">
