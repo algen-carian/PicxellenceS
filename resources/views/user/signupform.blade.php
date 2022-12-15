@@ -33,11 +33,7 @@
           </div>
           <div class="input-box">
             <span class="details">Contact</span>
-<<<<<<< Updated upstream
             <input type="number"  placeholder="Enter your username" name = "contact" required>
-=======
-            <input type="text" placeholder="Enter your contact" name = "contact" required>
->>>>>>> Stashed changes
           </div>
           <div class="input-box">
             <span class="details">Email</span>
