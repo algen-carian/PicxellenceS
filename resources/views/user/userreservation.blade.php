@@ -46,21 +46,21 @@
             <span class="tooltip">Reservation</span>
             </li>
             <li>
-            <a href="userprofile">
+            <a href="profile.php">
                 <i class='bx bx-user-circle' ></i>
                 <span class="links_name">User Profile</span>
             </a>
             <span class="tooltip">User Profile</span>
             </li>
             <li>
-                <a href="userabout">
+                <a href="sales_report.php">
                     <i class='bx bx-receipt' ></i>
                     <span class="links_name">About</span>
                 </a>
                 <span class="tooltip">About</span>
             </li>
             <li>
-                <a href="userevent">
+                <a href="pos.php">
                     <i class='bx bx-laptop' ></i>
                     <span class="links_name">Event</span>
                 </a>
@@ -160,7 +160,7 @@
 
       <script src="js/script.js"></script>
  <script>
-    
+
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");
 let searchBtn = document.querySelector(".bx-search");

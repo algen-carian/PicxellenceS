@@ -17,13 +17,13 @@
     <div class="sidebar" style = "padding-left: 0;">
         <div class="logo-details">
             <i class='bx bxl-heart-square icon'></i>
-            <div class="logo_name"><br><br>
+            <div class="logo_name"><br><br><br>
             <img src="assets/picxellence.png" alt="ADMIN" width="100" height="100">
                 <a href = "/adminlogin" style = "text-decoration: none; color: #fff;">Picxellence</a>
             </div>
             <i class='bx bx-menu' id="btn"></i>
         </div>
-        <br><br>
+        <br><br><br>
         <ul class="nav-list" style = "padding-left: 15px;">
           <!-- <li>
               <i class='bx bx-search' ></i>
@@ -37,29 +37,30 @@
             </a>
                 <span class="tooltip">Dashboard</span>
             </li>
+         
             <li>
-            <a href="inventory.php">
-                <i class='bx bxs-shopping-bag-alt'></i>
-                <span class="links_name">Home</span>
-            </a>
-            <span class="tooltip">Home</span>
-            </li>
-            <li>
-            <a href="profile.php">
+            <a href="adminprofile">
                 <i class='bx bx-user-circle' ></i>
                 <span class="links_name">Admin Profile</span>
             </a>
             <span class="tooltip">Profile</span>
             </li>
             <li>
-                <a href="sales_report.php">
+                <a href="adminabout">
                     <i class='bx bx-receipt' ></i>
                     <span class="links_name">About</span>
                 </a>
                 <span class="tooltip">About</span>
             </li>
             <li>
-                <a href="pos.php">
+                <a href="admininventory">
+                    <i class='bx bx-money' ></i>
+                    <span class="links_name">Inventory</span>
+                </a>
+                <span class="tooltip">Inventory</span>
+            </li>
+            <li>
+                <a href="adminhistory">
                     <i class='bx bx-laptop' ></i>
                     <span class="links_name">History</span>
                 </a>

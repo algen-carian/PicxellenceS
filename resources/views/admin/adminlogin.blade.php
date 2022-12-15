@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/adminloginregistration.css">
 
-    <title>ADMINLOGIN</title>
+    <title>ADMIN LOGIN</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -56,7 +56,12 @@
 <h1>PICXELLENCE</h1>
   
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
 </center>
+<center>
+  <a type="button" href = "/" class="btn btn-success mt-2 mb-2">User login</a>
+</center>
+</div>
 <div id="id01" class="modal">
     
 
@@ -64,7 +69,7 @@
     @csrf
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="assets/picxellence.png" alt="ADMIN" class="avatar" >
+      <img src="assets/ADMIN.png" alt="ADMIN" class="avatar" >
     </div>
 
     <div class="container">
@@ -74,9 +79,11 @@
 
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
+      
 
     
       <button type="submit">Login</button>
+      
 
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me

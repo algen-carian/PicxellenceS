@@ -21,19 +21,23 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
-            <input type="text" placeholder="Enter your name" name = "firstname" required>
+            <input type="text" placeholder="Enter your firstname" name = "firstname" required>
           </div>
           <div class="input-box">
             <span class="details">Middle name</span>
-            <input type="text" placeholder="Enter your username" name = "middlename" required>
+            <input type="text" placeholder="Enter your middlename" name = "middlename" required>
           </div>
           <div class="input-box">
             <span class="details">Last name</span>
-            <input type="text" placeholder="Enter your username" name = "lastname" required>
+            <input type="text" placeholder="Enter your lastname" name = "lastname" required>
           </div>
           <div class="input-box">
             <span class="details">Contact</span>
+<<<<<<< Updated upstream
             <input type="number"  placeholder="Enter your username" name = "contact" required>
+=======
+            <input type="text" placeholder="Enter your contact" name = "contact" required>
+>>>>>>> Stashed changes
           </div>
           <div class="input-box">
             <span class="details">Email</span>
@@ -41,7 +45,7 @@
           </div>
           <div class="input-box">
             <span class="details">Address</span>
-            <input type="text" placeholder="Enter your password" name = "address" required>
+            <input type="text" placeholder="Enter your Address" name = "address" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>
