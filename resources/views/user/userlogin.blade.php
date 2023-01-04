@@ -1,135 +1,73 @@
-
-@extends('layouts.master')
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/userlogin.css">
-  <title>USERLOGIN</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Login Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!----CSS link----->
+    <link rel="stylesheet" href="../assets/css/userlogin.css">
+  </head>
+  <body>
 
-  <!-- bootstrap 5 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</head>
-
-<style>
-    .alert {
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #f44336;
-    color: white;
-    left: 40%;
-    right: 40%;
-    position:fixed;
-    z-index: 1;
-  }.closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }.closebtn:hover {
-    color: black;
-  }
-</style>
-@if(session()->has('status') || session() === null)
-    <div class="alert alert-primary ">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-        <strong>WARNING!</strong> {{ session()->get('status') }}
-      
-    </div>
-@endif
-  
-<body style = "background-color: rgb(52, 116, 124)">
-  
-
-<div class="container mt-5">
-  <div class="row justify-content-center">
-    <div class="col-4">
-    
-
-    <!-- insert image here -->
-    <center>
-        <img class = "mt-5" src="assets/Photography  Videography.png" alt="Photo" width="500" height="500" style = "margin-left: -20rem;">
-    </center>
-
-
-    
-    </div>
-    <div class="col-4">
-      <div class="card shadow-lg p-3 rounded-3" style="width: 40rem; background-color: rgb(172, 182, 31);">
-
-        <!-- image logo -->
-        <center>
-          <img src="assets/picxellence.png" class="card-img-top mt-3" alt="..." style = "max-height: 300px; max-width: 300px;">
-        </center>
-        
-        <div class="card-body">
-          <h2 class="card-title mb-2"><center>User Login</center></h2>
-
-          <form class="form form-login" action="/userAuth" method="POST">
+  <form class="form form-login" action="/userAuth" method="POST">
         @csrf
     
-          <p class="card-text">
-            <div class="input-group input-group-sm mb-3">
-              <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
-              <input id="email" name="email" type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+      <div class="container">
+        <div class="card login-card">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img src="assets/Photography  Videography.png" width="500" height="200" class="login-card-img">
             </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="brand-wrapper">
+              <center>
+                  <img src="assets/picxellence.png"class="logo">
+</center>
+                </div>
+                <center>
+                <p class="login-card-description">Sign into your account</p>
+</center>
+                <form action="#!">
+                  <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="Password" class="sr-only">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                  </div>
+                  <input name="submit" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
 
-
-            <div class="input-group input-group-sm mb-3">
-              <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
-              <input id="password" name="password" type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-
-            </div>
-            </div>
-          </p>
-
-    
-          <center>
+                 <!-- <center>
             <button type="submit" class= "btn btn-primary "> login </button>  
-          <a href="signupform" class="btn btn-danger ">Signup</a>
-          </center>
-</form>
-          <center>
+          </center>-->
+
+
+                </form>
+                <a href="signupform" class="forgot-password-link">Forgot password</a>
+                <p class="login-card-footer-text">Don't have an account? <a href="signupform" class="text-reset">Register here</a></p>
+                <nav class="login-card-footer-nav">
+                <center>
             <a href="adminlogin" style="color:Black" class="btn mt-n1">Admin Login</a>
             <br>
             <a href="#" style="color:black" class="btn mt-n1">Forgot password?</a>
             <br>
-          </center>
-
-
+               </center>
+                  <a href="#!">Developed by.</a>
+                  <a href="#!">Algen&Me</a>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </main>
 
-
-
-
-
-
-
-    <!-- A HREF -->
-    <!-- <center>
-     <a type="button" href = "userdashboard" class="btn btn-success mt-2 mb-2">Log In</a>
-     <a type = "button" href="signupform" class="btn btn-danger mt-2 mb-2 ms-2">Sign up</a>
-    </center>
-    <center>
-    <a href="adminlogin" style="color:Black" class="btn mt-n1">Admin Login</a>
-    <br>
-    <a href="#" style="color:black" class="btn mt-n1">Forgot password?</a>
-    <br>
-    </center> -->
-                    
-
-
-</body>
+  </body>
 </html>

@@ -50,7 +50,6 @@
 
 <body>
 
-
 <center>
 <img src="assets/picxellence.png" alt="ADMIN" class="avatar" >
 <h1>PICXELLENCE</h1>

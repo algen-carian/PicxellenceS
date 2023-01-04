@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/userreservation.css">
     <title>userdashboard</title>
 
    
@@ -13,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
-<body id = "boody">
+<body id = "boody" style="background-image: url('../event2.jpg')">
     <div class="sidebar" style = "padding-left: 0;">
         <div class="logo-details">
             <i class='bx bxl-heart-square icon'></i>
@@ -61,7 +62,7 @@
             </li>
             <li>
                 <a href="pos.php">
-                    <i class='bx bx-laptop' ></i>
+                    <i class='bx bx-calendar' ></i>
                     <span class="links_name">Event</span>
                 </a>
                 <span class="tooltip">Event</span>
@@ -82,81 +83,106 @@
         </ul>
       </div>
       <!-- front end header indicator -->
-      <div class = "home-section">
-        <center>
-          <div class="text">Welcome back! Today is <div class = "time"><span id='date'></span></div>
-            </div>
-        </center>
-      </div>
-      <br>
-      <section class="service-section">
-          <div class="text_permission">
-          <div class="container">
- 
-        <div class="row g-4">
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect bounceInUp">
-                    <h5 class="mt-1 mb-2">Birthday</h5>
-                    <i style="color:#cf3c4f" class='bx bxs-shopping-bag-alt bx-lg'></i></br>
-                    <a href="inventory.php" class="btn btn-danger">Click Me</a>
+      <center>
+      <div class = "bakground"> 
+        <!-- <div class="header-title text-center m-5 mt-5"> -->
+            <br><br>
+        <h2 class>RESERVATION</h2>
+        <p>RESERVATION
+        Please fill out this form with your desired dates and we will get back to you asap.</p>
+
+
+        <div class="container">
+            <form action="">
+            <div class="form-row">
+
+            <div class="row align-items-center">
+                <div class="col">
+
+                    <div class="form-group col-md-6">
+                    <label for="name">Name*</label>
+                    <input type="text" class="form-control shadow" id="name" required>     
+                    </div>
+
+                    <div class="form-group col-md-6 mt-4">
+                        <label for="email">Email*</label>
+                        <input type="email" class="form-control shadow" id="email" required>     
+                    </div>
+
+                    <div class="form-group col-md-6 mt-4">
+                        <label for="Address">Address*</label>
+                        <input type="text" class="form-control shadow" id="country" required>     
+                    </div>
+
+                    <div class="form-group col-md-6 mt-4">
+                        <label for="contact">Contact Number*</label>
+                        <input type="text" class="form-control shadow" id="contact">     
+                    </div>
+
                 </div>
-                </center>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Christening </h5>
-                    <i style="color:#cf3c4f" class='bx bxs-receipt bx-lg'></i></br>
-                    <a href="sales_report.php" class="btn btn-danger">Click Me</a>
+                <div class="col">
+                    <div class="form-group col-md-6 mt-4">
+                        <label for="alternate">Alternative Number</label>
+                        <input type="text" class="form-control shadow" id="alternate">     
+                    </div>
+
+                    <div class="form-group col-md-6 mt-4">
+                    <label for="arrival">Date of registration</label>
+                    <input type="date" class="form-control shadow" id="arrival" required>     
+                    </div>
+
+                    <div class="form-group col-md-6 mt-4">
+                    <label for="departure">Date of Event</label>
+                    <input type="date" class="form-control shadow" id="departure" required>     
+                    </div>
+
+                    <form action="*">
+                    <label for="Services">Choose a Services:</label>
+                    <select name="Event" id="Event" class = "shadow mt-4">
+                        <option value=""></option>
+                        <option value="Birthday">Birthday (PHP 160)</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Christening">Christening</option>
+                        <option value="Debut">Debut</option>
+                    </select>
+
+                    <form action="*">
+                    <label for="Services">Other Services:</label>
+                    <select name="Event" id="Event" class = "shadow mt-4">
+                        <option value=""></option>
+                        <option value="Invitation Card">Invitation Card</option>
+                        <option value="Souvenir">Souvenir</option>
+                        <option value="tarpaulin">Tarpaulin</option>
+                        <option value="Sintra baord">Sintra Board</option>
+                        <option value="2X2 Picture">2X2 Picture</option>
+                        <option value="Document Print">Document Print</option>
+                        <option value="Lamination">Lamination</option>
+                    </select>
+
                 </div>
-                </center>
+                <!-- <div class="col">
+                One of three columns
+                </div> -->
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect bounceInUp">
-                    <h5 class="mt-1 mb-2">Wedding</h5>
-                    <i style="color:#cf3c4f" class='bx bx-laptop bx-lg'></i></br>
-                    <a href="userlogin" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
+
+
+            <div class="form-group col-md-6 mt-5">
+                <label for="message">Other Message</label>
+                <textarea class="form-control shadow" id="message" rows="3"></textarea>    
+            </div>     
+
+
+            <button type="submit" class="btn btn-primary mt-5">Submit</button>
+
+            <br><br><br><br><br>
+
             </div>
-            <!-- for spacing -->
-            <div class="col-lg-4 col-sm-6">
-                <!-- <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Log out</h5>
-                    <i class='bx bx-log-out bx-lg'></i></br>
-                    <button class="btn btn-primary">Click Me</button>
-                </div>
-                </center> -->
-            </div>
-            <!-- for spacing -->
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Profile</h5>
-                    <i style="color:#cf3c4f" class='bx bx-user-circle bx-lg'></i></br>
-                    <a href="profile.php" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
-            </div>
-            <!-- for spacing -->
-            <div class="col-lg-4 col-sm-6">
-                <!-- <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Log out</h5>
-                    <i class='bx bx-log-out bx-lg'></i></br>
-                    <button class="btn btn-primary">Click Me</button>
-                </div>
-                </center> -->
-            </div>
-            <!-- for spacing -->
+            </form>
         </div>
+
     </div>
-          </div>
- 
-</section>
+
+</center>
 
       <script src="js/script.js"></script>
  <script>

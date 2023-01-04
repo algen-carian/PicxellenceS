@@ -61,7 +61,7 @@
             </li>
             <li>
                 <a href="userevent">
-                    <i class='bx bx-laptop' ></i>
+                    <i class='bx bx-calendar' ></i>
                     <span class="links_name">Event</span>
                 </a>
                 <span class="tooltip">Event</span>

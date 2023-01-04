@@ -7,6 +7,7 @@ use App\Http\Controllers\adminhistoryController;
 use App\Http\Controllers\admininventoryController;
 use App\Http\Controllers\adminprofileController;
 use App\Http\Controllers\adminaboutController;
+use App\Http\Controllers\admineventController;
 
 
 use App\Http\Controllers\userdashboardController;
@@ -16,7 +17,7 @@ use App\Http\Controllers\userreservationController;
 use App\Http\Controllers\userprofileController;
 use App\Http\Controllers\usereventController;
 use App\Http\Controllers\useraboutController;
-
+use App\Http\Controllers\landingpageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -58,6 +59,15 @@ Route::get('/admininventory', function () {
 //ADMINPROFILE
 Route::get('/adminprofile', function () {
     return view('admin.adminprofile');
+});
+//ADMINEVENT
+Route::get('/adminevent', function () {
+    return view('admin.adminevent');
+});
+
+//landing page
+Route::get('/landingpage', function () {
+    return view('user.landingpage');
 });
 
 

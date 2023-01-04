@@ -66,6 +66,13 @@
                 </a>
                 <span class="tooltip">History</span>
             </li>
+            <li>
+                <a href="adminevent">
+                    <i class='bx bx-calendar' ></i>
+                    <span class="links_name">Event</span>
+                </a>
+                <span class="tooltip">Event</span>
+            </li>
             <a href = "/adminlogin">
                 <li class="profile">
                     <!-- <div class="profile-details">
