@@ -66,13 +66,13 @@ Route::get('/adminevent', function () {
 });
 
 //landing page
-Route::get('/landingpage', function () {
+Route::get('/', function () {
     return view('user.landingpage');
 });
 
 
 //USERLOGIN
-Route::get('/', function () {
+Route::get('/userlogin', function () {
     return view('user.userlogin');
 });
 

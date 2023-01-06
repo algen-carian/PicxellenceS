@@ -15,9 +15,12 @@
       <meta name="author" content="">
       <!-- bootstrap css -->
       <link rel="stylesheet" type="text/css" href="../assets/style-lp/css/bootstrap.min.css">
+
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
       <!-- style css -->
       <!-- <link rel="stylesheet" href="../assets/style-lp/css/landingpage.css">
-      <link rel="stylesheet" type="text/css" href="../assets/style-lp/css/landingpage.css"> -->
+      <link rel="stylesheet" type="text/css" href="../assets/style-lp/css/landingpage.css">  -->
       <link rel="stylesheet" type="text/css" href="../assets/style-lp/css/style.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="../assets/style-lp/css/responsive.css">
@@ -40,7 +43,7 @@
          <div class="header_main">
             <div class="mobile_menu">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="logo_mobile"><a href="index.html"><img src="../assets/style-lp/images/logo.png"></a></div>
+                  <div class="logo_mobile"><a href="index.html"><img src="../assets/picxellence.png"></a></div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -66,7 +69,7 @@
                </nav>
             </div>
             <div class="container-fluid">
-               <div class="logo"><a href="index.html"><img src="../assets/style-lp/images/logo.png"></a></div>
+               <div class="logo"><a href="index.html"><img src="../assets/picxellence.png"  width="200" height="200" ></a></div>
                <div class="menu_main">
                   <ul>
                      <li class="active"><a href="#index">Home</a></li>
@@ -74,6 +77,7 @@
                      <li><a href="#services">Services</a></li>
                      <li><a href="#blog">Blog</a></li>
                      <li><a href="#contact">Contact us</a></li>
+                     <li><a href="userlogin">userlogin</a></li>
                   </ul>
                </div>
             </div>
@@ -84,49 +88,67 @@
                <div class="carousel-inner">
                   <div class="carousel-item active">
                      <div class="container">
-                        <h1 class="banner_taital">Adventure</h1>
-                        <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are ma available, but the majority have suffered</p>
-                        <div class="read_bt"><a href="#">Reserve Now!</a></div>
+                        <h1 class="banner_taital">Birthday</h1>
+                        <p class="banner_text">Photographers and videographers work to capture still and moving moments respectively for a wide number of applications. Videography is used to create video content, and use audio equipment and video cameras to sound and capture moving scenes and document events. Photography creates visual content by capturing images of landscapes, events, and people.</p>
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="container">
-                        <h1 class="banner_taital">Adventure</h1>
-                        <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are ma available, but the majority have suffered</p>
-                        <div class="read_bt"><a href="#">Get A Quote</a></div>
+                        <h1 class="banner_taital">Wedding</h1>
+                        <p class="banner_text">Your inspiration is better if it comes from many different sources, and your sensibilities will transform all those influences and inspiration into your own visual world. It’s like reading a book instead of watching a movie.</p>
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="container">
-                        <h1 class="banner_taital">Adventure</h1>
-                        <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are ma available, but the majority have suffered</p>
-                        <div class="read_bt"><a href="#">Get A Quote</a></div>
+                        <h1 class="banner_taital">Debut</h1>
+                        <p class="banner_text">It’s your 18th birthday and its time to celebrate to the fullest! Make your 18th birthday an incredible day with our high quality photography and videography service.  Our team thinks out of the box producing modern and unique visual content appealing to younger generations. Count your age by friends, not years, your life by smile, not tears.</p>
                      </div>
                   </div>
-               </div>
+                  <div class="carousel-item">
+                     <div class="container">
+                        <h1 class="banner_taital">Christening</h1>
+                        <p class="banner_text">"The grace of being is gift of baptism by washing in water. And in spirit of Christ Jesus. Whoever believes and is baptized will be saved, but whoever does not believe will be condemned.</p>
+                       
+                     </div>
+                  </div>
+                  <div class="read_bt">
+                    <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                        Reserve Now!
+                    </a>
+                </div> 
+                
+                </div>
             </div>
          </div>
          <!-- banner section end -->
       </div>
+    
+      
+    
+        
       <!-- header section end -->
       <!-- services section start -->
       <div class="services_section layout_padding" id="service">
          <div class="container">
             <h1 class="services_taital">Services </h1>
-            <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+            <p class="services_text">Our full-planning service handles the entire scope of your event, including all design, production management, and logistics. From the minute details to the major decisions, our team of experienced planners will ensure your event goes according to plan with full and transparent communication. From the very first meeting, we’ll turn your ideas into a vision board to develop a creative concept you’ll love, and take over the budgeting and payment tracking. </p>
             <div class="services_section_2">
                <div class="row">
-                  <div class="col-md-4">
-                     <div><img src="../assets/style-lp/images/img-1.png" class="services_img"></div>
-                     <div class="btn_main"><a href="#">Rafting</a></div>
+                  <div class="col-md-3">
+                     <div><img src="../assets/birthday3.png" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                     <div class="btn_main"><a href="#">Birthday</a></div>
                   </div>
-                  <div class="col-md-4">
-                     <div><img src="../assets/style-lp/images/img-2.png" class="services_img"></div>
-                     <div class="btn_main active"><a href="#">Hiking</a></div>
+                  <div class="col-md-3">
+                     <div><img src="../assets/wedding1.jpg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                     <div class="btn_main"><a href="#">Wedding</a></div>
                   </div>
-                  <div class="col-md-4">
-                     <div><img src="../assets/style-lp/images/img-3.png" class="services_img"></div>
-                     <div class="btn_main"><a href="#">Camping</a></div>
+                  <div class="col-md-3">
+                     <div><img src="../assets/debut1.jpg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                     <div class="btn_main"><a href="#">Debut</a></div>
+                  </div>
+                  <div class="col-md-3">
+                     <div><img src="../assets/christening3.jpeg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                     <div class="btn_main"><a href="#">Christening</a></div>
                   </div>
                </div>
             </div>
@@ -140,12 +162,12 @@
                <div class="col-md-6">
                   <div class="about_taital_main">
                      <h1 class="about_taital">About Us</h1>
-                     <p class="about_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All </p>
+                     <p class="about_text">Chrisjem Photography Services ...</p>
                      <div class="readmore_bt"><a href="#">Read More</a></div>
                   </div>
                </div>
                <div class="col-md-6 padding_right_0">
-                  <div><img src="../assets/style-lp/images/about-img.png" class="about_img"></div>
+                  <div><img src="../assets/style-lp/images/poster.jpg" class="about_img"></div>
                </div>
             </div>
          </div>
@@ -177,7 +199,7 @@
                      <div class="carousel-item active">
                         <div class="client_main">
                            <div class="box_left">
-                              <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                              <p class="lorem_text">We now live in a world where almost everything is practically inseparable from the internet, businesses topping the list. It's now crucial that every business has a recognizable online presence, no matter its sector. Not only does modern technology help businesses get found online, but it also helps them easily convert visits into revenue through an online reservation system.</p>
                            </div>
                            <div class="box_right">
                               <div class="client_taital_left">
@@ -194,7 +216,7 @@
                      <div class="carousel-item">
                         <div class="client_main">
                            <div class="box_left">
-                              <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                              <p class="lorem_text">We now live in a world where almost everything is practically inseparable from the internet, businesses topping the list. It's now crucial that every business has a recognizable online presence, no matter its sector. Not only does modern technology help businesses get found online, but it also helps them easily convert visits into revenue through an online reservation system.</p>
                            </div>
                            <div class="box_right">
                               <div class="client_taital_left">
@@ -235,7 +257,7 @@
       <div class="choose_section layout_padding" id="contact">
          <div class="container">
             <h1 class="choose_taital">Why Choose Us</h1>
-            <p class="choose_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All </p>
+            <p class="choose_text">We now live in a world where almost everything is practically inseparable from the internet, businesses topping the list. It's now crucial that every business has a recognizable online presence, no matter its sector. Not only does modern technology help businesses get found online, but it also helps them easily convert visits into revenue through an online reservation system.</p>
             <div class="read_bt_1"><a href="#">Read More</a></div>
             <div class="newsletter_box">
                <h1 class="let_text">Let Start Talk with Us</h1>
@@ -253,13 +275,13 @@
             </div>
             <div class="location_main">
                <div class="call_text"><img src="../assets/style-lp/images/call-icon.png"></div>
-               <div class="call_text"><a href="#">Call +01 1234567890</a></div>
+               <div class="call_text"><a href="#">Call +01 9489373399</a></div>
                <div class="call_text"><img src="../assets/style-lp/images/mail-icon.png"></div>
-               <div class="call_text"><a href="#">demo@gmail.com</a></div>
+               <div class="call_text"><a href="#">christjemphotography@gmail.com</a></div>
             </div>
             <div class="social_icon">
                <ul>
-                  <li><a href="#"><img src="../assets/style-lp/images/fb-icon.png"></a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=100063951038911"><img src="../assets/style-lp/images/fb-icon.png"></a></li>
                   <li><a href="#"><img src="../assets/style-lp/images/twitter-icon.png"></a></li>
                   <li><a href="#"><img src="../assets/style-lp/images/linkedin-icon.png"></a></li>
                   <li><a href="#"><img src="../assets/style-lp/images/instagram-icon.png"></a></li>
@@ -271,9 +293,173 @@
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="">Free html  Templates</a></p>
+            <p class="copyright_text">2022 All Rights Reserved. Design by <a href="">Algen & Me</a></p>
          </div>
       </div>
+
+      <!-- Large modal -->
+      <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="exampleModalLabel">Reserve Events</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                
+                                    
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Name:</label><br>
+                                        <input class="form-control shadow" id="fname" style="width:30%;margin-right:5%;float:left;" placeholder="First name"></input>
+                                        <input class="form-control shadow" id="mname" style="width:30%;margin-right:5%;float:left;" placeholder="Middle name"></input>
+                                        <input class="form-control shadow" id="lname" style="width:30%;float:left;" placeholder="Last name"></input>
+                                    </div><br>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Email:</label>
+                                        <input class="form-control shadow" id="email"></input>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Address:</label>
+                                        <input class="form-control shadow" id="Address"></input>
+                                    </div>
+                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                                        <label for="message-text" class="col-form-label">Contact:</label>
+                                        <input class="form-control shadow" id="contact"></input>
+                                    </div>
+                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                                        <label for="message-text" class="col-form-label">Alternate Number:</label>
+                                        <input class="form-control shadow" id="alternate"></input>
+                                    </div>
+                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                                        <label for="message-text" class="col-form-label">Date of registration:</label>
+                                        <input type="date" class="form-control shadow"  id="registration" required>
+                                    </div>
+                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                                        <label for="message-text" class="col-form-label">Date of Event:</label>
+                                        <input type="date" class="form-control shadow"  id="Event" required>
+                                    </div>     
+                            </div>
+                          
+                            <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                             
+                                        <label for="Services" style="width:100%;margin-left:5%;float:left;">Events:</label>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:left;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Birthday
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:left;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Wedding
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:left;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Debut
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:left;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Christening
+                                            </label>
+                                        </div>
+
+                                        <!-- <div class="dropdown">
+                                       <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <span id="selected">Choose option</span>
+                                          <span class="caret"></span>
+                                       </button>
+                                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Birthday</a>
+                                          <a class="dropdown-item" href="#">Wedding</a>
+                                          <a class="dropdown-item" href="#">Debut</a>
+                                          <a class="dropdown-item" href="#">Christening</a>
+                                       </div>
+                                       </div> -->
+                                        <br><br>
+
+                                </div>
+
+                                <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+
+                                    <label for="Services" style="width:100%;margin-left:5%;float:left;">Other Services:</label>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:right;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Invitation Card
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:right;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Souvenir
+                                            </label>
+                                            </div>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:right;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Tarpaulin
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:right;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Sintra Board
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:right;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                2X2 Picture
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:right;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Document Print
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="width:45%;margin-left:5%;float:right;">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Lamination
+                                            </label>
+                                        </div>
+
+                                        <!-- <div class="dropdown">
+                                       <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Choose option
+                                       </button>
+                                       <div class="dropdown-menu" aria-labelledby="dLabel">
+                                          <a class="dropdown-item" href="#">Invitation Card</a>
+                                          <a class="dropdown-item" href="#">Souvenir</a>
+                                          <a class="dropdown-item" href="#">Tarpaulin</a>
+                                          <a class="dropdown-item" href="#">Sintra Board</a>
+                                          <a class="dropdown-item" href="#">2X2 Picture</a>
+                                          <a class="dropdown-item" href="#">Document Print</a>
+                                          <a class="dropdown-item" href="#">Lamination</a>
+                                       </div>
+                                       </div> -->
+                                        <form action="*">
+                                        
+                                </div>
+                                       
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                                
+                
+                                
+                            </div>
+                        </div>
+                    </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
       <script src="../assets/style-lp/js/jquery.min.js"></script>
@@ -287,5 +473,20 @@
       <!-- javascript --> 
       <script src="../assets/style-lp/js/owl.carousel.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+
+      <!-- for dropdown --> 
+      <!-- <script>
+
+         $('.dropdown-menu a').click(function(){
+            $('#selected').text($(this).text());
+         });
+
+         $('.dropdown-menu a').click(function(){
+            $('#selected2').text($(this).text());
+         });
+
+      </script> -->
+
+
    </body>
 </html>
