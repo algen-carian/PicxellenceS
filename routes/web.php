@@ -65,7 +65,6 @@ Route::get('/adminevent', function () {
     return view('admin.adminevent');
 });
 
-//landing page
 Route::get('/', function () {
     return view('user.landingpage');
 });
@@ -142,3 +141,5 @@ Route::post('/userevent',[usereventController::class, 'index']);
 Route::post('/userabout',[useraboutController::class, 'index']);
 //NEW CODE
 Route::post('/userlogin', [userloginController::class,'login'])->name('userlogin');
+
+Route::post('/reserve', [userreservationController::class,'reserve'])->name('reserve');
