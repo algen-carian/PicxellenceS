@@ -14,185 +14,108 @@
 
 </head>
 <body id = "boody">
-    <div class="sidebar" style = "padding-left: 0;">
-        <div class="logo-details">
-            <i class='bx bxl-heart-square icon'></i>
-            <div class="logo_name"><br><br><br>
-            <img src="assets/picxellence.png" alt="ADMIN" width="100" height="100">
-                <a href = "/adminlogin" style = "text-decoration: none; color: #fff;">Picxellence</a>
-            </div>
-            <i class='bx bx-menu' id="btn"></i>
-        </div>
-        <br><br><br>
-        <ul class="nav-list" style = "padding-left: 15px;">
-          <!-- <li>
-              <i class='bx bx-search' ></i>
-             <input type="text" placeholder="Search...">
-             <span class="tooltip">Search</span>
-          </li> -->
-            <li>
-            <a href="admindashboard">
-                <i class='bx bx-grid-alt'></i>
-                <span class="links_name">Dashboard</span>
-            </a>
-                <span class="tooltip">Dashboard</span>
-            </li>
-         
-            <li>
-            <a href="adminprofile">
-                <i class='bx bx-user-circle' ></i>
-                <span class="links_name">Admin Profile</span>
-            </a>
-            <span class="tooltip">Profile</span>
-            </li>
-            <li>
-                <a href="adminabout">
-                    <i class='bx bx-receipt' ></i>
-                    <span class="links_name">About</span>
-                </a>
-                <span class="tooltip">About</span>
-            </li>
-            <li>
-                <a href="admininventory">
-                    <i class='bx bx-money' ></i>
-                    <span class="links_name">Inventory</span>
-                </a>
-                <span class="tooltip">Inventory</span>
-            </li>
-            <li>
-                <a href="adminhistory">
-                    <i class='bx bx-laptop' ></i>
-                    <span class="links_name">History</span>
-                </a>
-                <span class="tooltip">History</span>
-            </li>
-            <li>
-                <a href="adminevent">
-                    <i class='bx bx-calendar' ></i>
-                    <span class="links_name">Event</span>
-                </a>
-                <span class="tooltip">Event</span>
-            </li>
-            <a href = "/adminlogin">
-                <li class="profile">
-                    <!-- <div class="profile-details">
-                    <img src="profile.jpg" alt="profileImg">
-                    <div class="name_email">
-                        <div class="name">User One</div>
-                        <div class="email">admin@admin</div>
-                    </div>
-                    </div> -->
-                    <div class = "text_logout">Log-Out</div>
-                    <i class='bx bx-log-out' id="log_out" ></i>
-                </li>
-            </a>
-        </ul>
-      </div>
+
+        @extends('admin.menu')
+        
       <!-- front end header indicator -->
       <div class = "home-section">
         <center>
-          <div class="text">Welcome back! Today is <div class = "time"><span id='date'></span></div>
+          <div class="text">Welcome back! Today is <span id='date'>
+            {{  $formattedDate = date('jS \of F, Y', strtotime(date('Y-m-d'))); }}
+           </span>
             </div>
         </center>
       </div>
       <br>
-      <section class="service-section">
-          <div class="text_permission">
-          <div class="container">
- 
-        <div class="row g-4">
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect bounceInUp">
-                    <h5 class="mt-1 mb-2">Chirstening</h5>
-                    <i style="color:#cf3c4f" class='bx bxs-shopping-bag-alt bx-lg'></i></br>
-                    <a href="inventory.php" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
+      <br>
+    <section class="service-section">
+        <div class="text_permission">
+            <div class="container">
+    
+        <!--======================================================  Content  ====================================================-->
+                       
+                            <div class="row" style="margin-left: auto;
+                                                    margin-right: auto;
+                                                    width: 80%;
+                                                    padding: 10%px;">
+                              <div class="col-xl-3 col-sm-6 mb-3">
+                                <div class="card dashboard text-white bg-primary o-hidden h-100">
+                                  <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                                    </div>
+                              <div class="mr-5"><h5>Birthday</h5></div>
+                                    {{ $data[1] }}
+
+                                  </div>
+                                  <a class="card-footer text-white clearfix small z-1" href="reviews.html">
+                                      <span class="float-left">view >>></span>
+                                    <span class="float-right">
+                                      <i class="fa fa-angle-right"></i>
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-xl-3 col-sm-6 mb-3">
+                                <div class="card dashboard text-white bg-warning o-hidden h-100">
+                                  <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                                    </div>
+                              <div class="mr-5"><h5>Wedding</h5></div>
+                                    {{ $data[0] }}
+                                  </div>
+                                  <a class="card-footer text-white clearfix small z-1" href="reviews.html">
+                                      <span class="float-left">View >>></span>
+                                    <span class="float-right">
+                                      <i class="fa fa-angle-right"></i>
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-xl-3 col-sm-6 mb-3">
+                                <div class="card dashboard text-white bg-success o-hidden h-100">
+                                  <div class="card-body">
+                                    <div class="card-body-icon">
+                                      <i class="fa fa-fw fa-calendar-check-o"></i>
+                                    </div>
+                                    <div class="mr-5"><h5>Christening</h5></div>
+                                    {{ $data[2] }}
+                                  </div>
+                                  <a class="card-footer text-white clearfix small z-1" href="bookings.html">
+                                      <span class="float-left">View >>></span>
+                                    <span class="float-right">
+                                      <i class="fa fa-angle-right"></i>
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="col-xl-3 col-sm-6 mb-3">
+                                <div class="card dashboard text-white bg-danger o-hidden h-100">
+                                  <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="fa fa-archive" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="mr-5"><h5>Debut</h5></div>
+                                    {{ $data[3]}}
+                                  </div>
+                                  <a class="card-footer text-white clearfix small z-1" href="bookmarks.html">
+                                      <span class="float-left">View</span>
+                                    <span class="float-right">
+                                      <i class="fa fa-angle-right"></i>
+                                    </span>
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+     <!--=================================================End ===================================================-->
+    
+
+
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Birthday</h5>
-                    <i style="color:#cf3c4f" class='bx bxs-receipt bx-lg'></i></br>
-                    <a href="sales_report.php" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect bounceInUp">
-                    <h5 class="mt-1 mb-2">Wedding</h5>
-                    <i style="color:#cf3c4f" class='bx bx-laptop bx-lg'></i></br>
-                    <a href="pos.php" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
-            </div>
-            <!-- for spacing -->
-            <div class="col-lg-4 col-sm-6">
-                <!-- <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Log out</h5>
-                    <i class='bx bx-log-out bx-lg'></i></br>
-                    <button class="btn btn-primary">Click Me</button>
-                </div>
-                </center> -->
-            </div>
-            <!-- for spacing -->
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Profile</h5>
-                    <i style="color:#cf3c4f" class='bx bx-user-circle bx-lg'></i></br>
-                    <a href="profile.php" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
-            </div>
-            <!-- for spacing -->
-            <div class="col-lg-4 col-sm-6">
-                <!-- <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Log out</h5>
-                    <i class='bx bx-log-out bx-lg'></i></br>
-                    <button class="btn btn-primary">Click Me</button>
-                </div>
-                </center> -->
-            </div>
-            <!-- for spacing -->
         </div>
-    </div>
-          </div>
- 
-</section>
+    </section>
 
-      <script src="js/script.js"></script>
- <script>
-    alert("Welcome Admin")
-let sidebar = document.querySelector(".sidebar");
-let closeBtn = document.querySelector("#btn");
-let searchBtn = document.querySelector(".bx-search");
- 
- 
-closeBtn.addEventListener("click", ()=>{
-  sidebar.classList.toggle("open");
-  menuBtnChange();//calling the function(optional)
-});
- 
-searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-  sidebar.classList.toggle("open");
-  menuBtnChange(); //calling the function(optional)
-});
-
-// following are the code to change sidebar button(optional)
-function menuBtnChange() {
- if(sidebar.classList.contains("open")){
-   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
- }else {
-   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
- }
-}
-</script>
- 
 </body>
 
 </html>

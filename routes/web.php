@@ -115,7 +115,7 @@ Route::get('/admindashboard',[admindashboardController::class, 'index']);
 //ADMINHISTORY
 Route::get('/adminhistory',[adminhistoryController::class, 'index']);
 //ADMININVENTORY
-Route::get('/admininventory',[admininventoryController::class, 'index']);
+Route::get('/Reservation',[admininventoryController::class, 'index']);
 //ADMINPROFILE
 Route::get('/adminprofile',[adminprofileController::class, 'index']);
 //ADMINABOUT
