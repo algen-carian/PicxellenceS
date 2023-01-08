@@ -78,11 +78,11 @@ class userreservationController extends Controller
             ];
 
             if($res){
-                    \Mail::send('user.landingpage',$mail_data,function($message) use ($mail_data){
-                         $message->to($mail_data['recipient'])
-                                 ->from($mail_data['fromEmail'],$mail_data['fromName'])
-                                 ->subject($mail_data['Subject']);
-                    });
+                    // \Mail::send('user.landingpage',$mail_data,function($message) use ($mail_data){
+                    //      $message->to($mail_data['recipient'])
+                    //              ->from($mail_data['fromEmail'],$mail_data['fromName'])
+                    //              ->subject($mail_data['Subject']);
+                    // });
 
 
                     return back()->with('Success','Reserve successfuly !, Please check your email for confirmation.');
