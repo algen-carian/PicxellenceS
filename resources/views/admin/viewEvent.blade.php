@@ -61,13 +61,13 @@
                 </a>
                 <span class="tooltip">Event</span>
             </li>
-            <li>
+            <!-- <li>
                 <a href="../adminprofile">
                     <i class='bx bx-user-circle' ></i>
                     <span class="links_name">Admin Profile</span>
                 </a>
                 <span class="tooltip">Profile</span>
-            </li>
+            </li> -->
             <a href = "../adminlogin">
                 <li class="profile">
                     <div class = "text_logout">Log-Out</div>

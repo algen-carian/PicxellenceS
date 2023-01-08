@@ -21,6 +21,6 @@ class admininventoryController extends Controller
         // $Events = r_event::join("reservations","r_events.reservation_id","=","reservations.id")
         //                     ->get(["r_events.*","reservations.*"])->paginate(5);
         
-        return view('admin.Reservation',compact('Events'))->with('i', (request()->input('page', 1) - 1) * 5);
+        return view('admin.Reservation',compact('Events'))->with('i', (request()->input('page', 1) - 1) * 10);
     }
 }

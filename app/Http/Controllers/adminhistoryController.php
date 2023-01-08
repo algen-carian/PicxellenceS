@@ -16,7 +16,7 @@ class adminhistoryController extends Controller
         ->paginate(10);
 
 
-        return view('admin.adminhistory',compact('Events'))->with('i', (request()->input('page', 1) - 1) * 5);
+        return view('admin.adminhistory',compact('Events'))->with('i', (request()->input('page', 1) - 1) * 10);
 
     }
 }
