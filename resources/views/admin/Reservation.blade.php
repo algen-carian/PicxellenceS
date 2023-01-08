@@ -21,15 +21,16 @@
         <section class="service-section" style="padding:10%;">
           <div class="text_permission">
             <div class="container-fluid">
+                <h2>Reservations</h2>
                 <table class="table">
                     <thead class="thead-dark">
                     
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
-                            <th scope="col">Event Type</th>
                             <th scope="col">Event Date</th>
                             <th scope="col">Status</th>
+                            <th scope="col" colspan="2">Action</th>
                     
                     </thead>
                     <tbody>
@@ -38,19 +39,30 @@
                             <th scope="row">{{ ++$i }}</th>
                             <td>{{$ev->fname.' '.$ev->mname.' '.$ev->lname}}</td>
                             <td>{{$ev->email}}</td>
-                            <td>{{$ev->Type}}</td>
                             <td>{{$ev->Event_date}}</td>
                             <td>{{$ev->event_status}}</td>
+                            <td>
+                                @if($ev->event_status == "Pending")
+                                    <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="btn btn-primary">Approve</button></a>
+                                    <a href="{{route('updateCancel',$ev->reservation_id)}}"><button class="btn btn-danger">Cancel</button></a>
+                                @endif
+                                @if($ev->event_status == "Approved")
+                                    <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="btn btn-success">Finished</button></a>
+                                @endif
+                            </td>
+                            <td>
+                                    <a href="{{route('viewEvent',$ev->reservation_id)}}"><button class="btn btn-primary">View</button></a>
+                            </td>
                         </tr>
                         @endforeach
                         
                     </tbody>
                 </table>
-
+                
                 <nav>
-                    <ul class="pagination" >
+                    <ul class="pagination" style="float:right;">
                         <li class="page-item">
-                            {!! $Events->links() !!}
+                            {!! $Events->appends(['sort' => 'Event_date'])->links() !!}
                         </li>
                     </ul>
                 </nav>
@@ -63,6 +75,7 @@
 
  
 </body>
+
 
 </html>
  

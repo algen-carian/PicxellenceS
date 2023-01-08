@@ -330,144 +330,75 @@
 
                                     <div class="form-group">
                                         <label for="message-text" class="col-form-label">Name:</label><br>
-                                        <input name="fname"  class="form-control shadow" id="fname" style="width:30%;margin-right:5%;float:left;" placeholder="First name"></input>
-                                        <input name="mname"  class="form-control shadow" id="mname" style="width:30%;margin-right:5%;float:left;" placeholder="Middle name"></input>
-                                        <input name="lname"  class="form-control shadow" id="lname" style="width:30%;float:left;" placeholder="Last name"></input>
+                                        <input name="fname"  class="form-control shadow" id="fname" style="width:30%;margin-right:5%;float:left;" placeholder="First name"  required>
+                                        <input name="mname"  class="form-control shadow" id="mname" style="width:30%;margin-right:5%;float:left;" placeholder="Middle name">
+                                        <input name="lname"  class="form-control shadow" id="lname" style="width:30%;float:left;" placeholder="Last name"  required>
                                     </div>
                                     <br>
-                                    <div class="form-group">
+                                    <div class="form-group" style="width:50%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Email:</label>
-                                        <input name="email"  class="form-control shadow" id="email"></input>
+                                        <input name="email"  class="form-control shadow" id="email" placeholder ="sample@gmail.com"   required>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="message-text" class="col-form-label">Address:</label>
-                                        <input name="Address"  class="form-control shadow" id="Address"></input>
+                                    <div class="form-group" style="width:50%;padding:2%;float:left;">
+                                        <label for="message-text" class="col-form-label">Location:</label>
+                                        <input name="Address"  class="form-control shadow" id="Address" required>
                                     </div>
-                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                                    <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Contact:</label>
-                                        <input name="contact"  class="form-control shadow" id="contact"></input>
+                                        <input name="contact"  class="form-control shadow" id="contact" required>
                                     </div>
-                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                                    <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Alternate Number:</label>
-                                        <input name="alternate"  class="form-control shadow" id="alternate"></input>
+                                        <input name="alternate"  class="form-control shadow" id="alternate" required>
                                     </div>
-                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
-                                        <label for="message-text" class="col-form-label">Date of registration:</label>
-                                        <input name="shadow"  type="date" class="form-control shadow"  id="registration" required>
-                                    </div>
-                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                                    
+                                    <div class="form-group" style="width:30%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Date of Event:</label>
                                         <input name="Event"  type="date" class="form-control shadow"  id="Event" required>
                                     </div>    
-                          
-                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                                      
+                                    <div class="form-group" style="width:50%;padding:2%;float:left;">
                                  
-                                 
-                                             <label for="Services" style="width:100%;margin-left:5%;float:left;">Events:</label>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:left;">
-                                                <input name="Services[]" value="Birthday" class="form-check-input" type="checkbox"  id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Birthday
-                                                </label>
-                                             </div>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:left;">
-                                                <input name="Services[]" value="Wedding"  class="form-check-input" type="checkbox"  id="flexCheckDefault" >
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Wedding
-                                                </label>
-                                             </div>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:left;">
-                                                <input name="Services[]" value="Debut" class="form-check-input" type="checkbox"  id="flexCheckDefault" >
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Debut
-                                                </label>
-                                             </div>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:left;">
-                                                <input name="Services[]" value="Christening"  class="form-check-input" type="checkbox"  id="flexCheckDefault" >
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Christening
-                                                </label>
-                                             </div>
+                                      
+                                          <label for="Services" >Events:</label>
+                                                @foreach($Events as $ev)
+                                                   @if($ev->event_content == "Event")
+         
+                                                      <div class="form-check" >
+                                                         <input name="Services[]" value="{{$ev->id}}" class="form-check-input" type="checkbox"  id="flexCheckDefault">
+                                                         <label class="form-check-label" for="flexCheckDefault">
+                                                               {{$ev->event_title}}:{{$ev->event_price}}
+                                                         </label>
+                                                      </div>
+                                                         @endif
+                                                @endforeach
+                                          
+                                       
 
-                                             <!-- <div class="dropdown">
-                                             <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <span id="selected">Choose option</span>
-                                                <span class="caret"></span>
-                                             </button>
-                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                <a class="dropdown-item" href="#">Birthday</a>
-                                                <a class="dropdown-item" href="#">Wedding</a>
-                                                <a class="dropdown-item" href="#">Debut</a>
-                                                <a class="dropdown-item" href="#">Christening</a>
-                                             </div>
-                                             </div> -->
                                              <br><br>
 
                                     </div>
 
-                                    <div class="form-group" style="width:45%;margin-left:5%;float:left;">
+                                    <div class="form-group" style="width:50%;padding:2%;float:left;">
 
-                                          <label for="Services" style="width:100%;margin-left:5%;float:left;">Other Services:</label>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:right;">
-                                                <input name="Other_Services[]" value="Invitation Card"  class="form-check-input" type="checkbox"  id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Invitation Card
-                                                </label>
-                                             </div>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:right;">
-                                                <input   name="Other_Services[]" value="Souvenir"  class="form-check-input" type="checkbox"  id="flexCheckDefault" >
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Souvenir
-                                                </label>
+                                          <label for="Services" >Other Services:</label>
+
+                                          @foreach($Events as $ev)
+                                             @if($ev->event_content == "Services")
+          
+                                                <div class="form-check" >
+                                                   <input name="Other_Services[]" value="{{$ev->id}}"  class="form-check-input" type="checkbox"  id="flexCheckDefault">
+                                                   <label class="form-check-label" for="flexCheckDefault">
+                                                      {{$ev->event_title}}:{{$ev->event_price}}
+                                                   </label>
                                                 </div>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:right;">
-                                                <input   name="Other_Services[]" value="Tarpaulin" class="form-check-input" type="checkbox"  id="flexCheckDefault" >
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Tarpaulin
-                                                </label>
-                                             </div>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:right;">
-                                                <input   name="Other_Services[]" value="Sintra Board" class="form-check-input" type="checkbox"  id="flexCheckDefault" >
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Sintra Board
-                                                </label>
-                                             </div>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:right;">
-                                                <input   name="Other_Services[]" value="2X2 Picture" class="form-check-input" type="checkbox"  id="flexCheckDefault" >
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      2X2 Picture
-                                                </label>
-                                             </div>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:right;">
-                                                <input   name="Other_Services[]" value="Document Print" class="form-check-input" type="checkbox"  id="flexCheckDefault" >
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Document Print
-                                                </label>
-                                             </div>
-                                             <div class="form-check" style="width:45%;margin-left:5%;float:right;">
-                                                <input   name="Other_Services[]" value="Lamination" class="form-check-input" type="checkbox"  id="flexCheckDefault" >
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                      Lamination
-                                                </label>
-                                             </div>
 
-                                             <!-- <div class="dropdown">
-                                             <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Choose option
-                                             </button>
-                                             <div class="dropdown-menu" aria-labelledby="dLabel">
-                                                <a class="dropdown-item" href="#">Invitation Card</a>
-                                                <a class="dropdown-item" href="#">Souvenir</a>
-                                                <a class="dropdown-item" href="#">Tarpaulin</a>
-                                                <a class="dropdown-item" href="#">Sintra Board</a>
-                                                <a class="dropdown-item" href="#">2X2 Picture</a>
-                                                <a class="dropdown-item" href="#">Document Print</a>
-                                                <a class="dropdown-item" href="#">Lamination</a>
-                                             </div>
-                                             </div> -->
+                                             @endif
+                                          @endforeach
                                     </div>
-                                       
-                                    <div class="modal-footer">
+                                       <br>
+                                       <br>
+                                    <div class="modal-footer" style="width:50%;padding:2%;float:left;">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                           <button type="submit" class="btn btn-primary">Send message</button>
                                     </div>

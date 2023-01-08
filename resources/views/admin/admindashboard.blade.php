@@ -34,20 +34,17 @@
     
         <!--======================================================  Content  ====================================================-->
                        
-                            <div class="row" style="margin-left: auto;
-                                                    margin-right: auto;
-                                                    width: 80%;
-                                                    padding: 10%px;">
+                            <div class="row" style="margin-left: auto;margin-right: auto;width: 80%;padding: 10%px;">
                               <div class="col-xl-3 col-sm-6 mb-3">
                                 <div class="card dashboard text-white bg-primary o-hidden h-100">
                                   <div class="card-body">
                                     <div class="card-body-icon">
                                         <i class="fa fa-folder-open-o" aria-hidden="true"></i>
                                     </div>
-                              <div class="mr-5"><h5>Birthday</h5></div>
-                                    {{ $data[1] }}
+                                    <div class="mr-5"><h5>Revenue</h5></div>
+                                          {{ $data[0] }}
 
-                                  </div>
+                                    </div>
                                   <a class="card-footer text-white clearfix small z-1" href="reviews.html">
                                       <span class="float-left">view >>></span>
                                     <span class="float-right">
@@ -62,11 +59,11 @@
                                     <div class="card-body-icon">
                                         <i class="fa fa-folder-open-o" aria-hidden="true"></i>
                                     </div>
-                              <div class="mr-5"><h5>Wedding</h5></div>
-                                    {{ $data[0] }}
+                              <div class="mr-5"><h5>Events</h5></div>
+                                    {{ $data[1] }}
                                   </div>
                                   <a class="card-footer text-white clearfix small z-1" href="reviews.html">
-                                      <span class="float-left">View >>></span>
+                                      <span class="float-left"> >>></span>
                                     <span class="float-right">
                                       <i class="fa fa-angle-right"></i>
                                     </span>
@@ -79,7 +76,7 @@
                                     <div class="card-body-icon">
                                       <i class="fa fa-fw fa-calendar-check-o"></i>
                                     </div>
-                                    <div class="mr-5"><h5>Christening</h5></div>
+                                    <div class="mr-5"><h5>Reservation</h5></div>
                                     {{ $data[2] }}
                                   </div>
                                   <a class="card-footer text-white clearfix small z-1" href="bookings.html">
@@ -96,7 +93,7 @@
                                     <div class="card-body-icon">
                                         <i class="fa fa-archive" aria-hidden="true"></i>
                                     </div>
-                                    <div class="mr-5"><h5>Debut</h5></div>
+                                    <div class="mr-5"><h5>Services</h5></div>
                                     {{ $data[3]}}
                                   </div>
                                   <a class="card-footer text-white clearfix small z-1" href="bookmarks.html">

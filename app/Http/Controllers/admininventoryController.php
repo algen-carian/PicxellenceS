@@ -13,6 +13,9 @@ class admininventoryController extends Controller
         $Events = DB::table('r_events')
                 ->join('reservations', 'r_events.reservation_id', '=', 'reservations.id')
                 ->select('reservations.*', 'r_events.*')
+                ->where('reservations.event_status','!=','Finish')
+                ->where('reservations.event_status','!=','Canceled')
+                ->where('r_events.Type',"Event")
                 ->paginate(10);
 
         // $Events = r_event::join("reservations","r_events.reservation_id","=","reservations.id")

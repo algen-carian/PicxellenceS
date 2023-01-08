@@ -45,9 +45,9 @@ Route::get('/admindashboard', function () {
     return view('admin.admindashboard');
 });
 //ADMINHISTORY
-Route::get('/adminhistory', function () {
-    return view('admin.adminhistory');
-});
+// Route::get('/adminhistory', function () {
+//     return view('admin.adminhistory');
+// });
 //ADMINABOUT
 Route::get('/adminabout', function () {
     return view('admin.adminabout');
@@ -61,13 +61,9 @@ Route::get('/adminprofile', function () {
     return view('admin.adminprofile');
 });
 //ADMINEVENT
-Route::get('/adminevent', function () {
-    return view('admin.adminevent');
-});
+Route::get('/adminevent',[admineventController::class, 'index']);
 
-Route::get('/', function () {
-    return view('user.landingpage');
-});
+
 
 
 //USERLOGIN
@@ -143,3 +139,8 @@ Route::post('/userabout',[useraboutController::class, 'index']);
 Route::post('/userlogin', [userloginController::class,'login'])->name('userlogin');
 
 Route::post('/reserve', [userreservationController::class,'reserve'])->name('reserve');
+Route::get('/updateStatus/{id}', [userreservationController::class,'updateStatus'])->name('updateStatus');
+Route::get('/updateCancel/{id}', [userreservationController::class,'updateCancel'])->name('updateCancel');
+Route::get('/viewEvent/{id}', [userreservationController::class,'viewEvent'])->name('viewEvent');
+Route::post('/addEvent', [userreservationController::class,'addEvent'])->name('addEvent');
+Route::get('/', [landingpageController::class,'index']);

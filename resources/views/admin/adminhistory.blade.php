@@ -17,85 +17,60 @@
    
         <!-- side -->
         @extends('admin.menu')
-      <!-- front end header indicator -->
-      <div class = "home-section">
-        <center>
-          <div class="text">Welcome back! Today is <div class = "time"><span id='date'></span></div>
-            </div>
-        </center>
-      </div>
-      <br>
-      <section class="service-section">
+
+        <section class="service-section" style="padding:10%;">
           <div class="text_permission">
-          <div class="container">
- 
-        <div class="row g-4">
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect bounceInUp">
-                    <h5 class="mt-1 mb-2">Chirstening</h5>
-                    <i style="color:#cf3c4f" class='bx bxs-shopping-bag-alt bx-lg'></i></br>
-                    <a href="inventory.php" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
+            <div class="container-fluid">
+                <h2>History</h2>
+                <table class="table">
+                    <thead class="thead-dark">
+                    
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Event Date</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                    
+                    </thead>
+                    <tbody>
+                        @foreach ($Events as $ev)
+                        <tr>
+                            <th scope="row">{{ ++$i }}</th>
+                            <td>{{$ev->fname.' '.$ev->mname.' '.$ev->lname}}</td>
+                            <td>{{$ev->email}}</td>
+                            <td>
+                                @if($ev->event_status == "Canceled")
+                                    <p style="color:red;">{{$ev->event_status}}</p>
+                                @endif
+                                @if($ev->event_status == "Finish")
+                                    <p style="color:green;">{{$ev->event_status}}</p>
+                                @endif
+                            </td>
+                            <td>{{$ev->Event_date}}</td>
+                            <td>
+                                    <a href="{{route('viewEvent',$ev->reservation_id)}}"><button class="btn btn-primary">View</button></a>
+                            </td>
+                        </tr>
+                        @endforeach
+                        
+                    </tbody>
+                </table>
+                
+                <nav>
+                    <ul class="pagination" style="float:right;">
+                        <li class="page-item">
+                            {!! $Events->appends(['sort' => 'Event_date'])->links() !!}
+                        </li>
+                    </ul>
+                </nav>
+
+                </div>        
             </div>
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Birthday</h5>
-                    <i style="color:#cf3c4f" class='bx bxs-receipt bx-lg'></i></br>
-                    <a href="sales_report.php" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect bounceInUp">
-                    <h5 class="mt-1 mb-2">Wedding</h5>
-                    <i style="color:#cf3c4f" class='bx bx-laptop bx-lg'></i></br>
-                    <a href="pos.php" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
-            </div>
-            <!-- for spacing -->
-            <div class="col-lg-4 col-sm-6">
-                <!-- <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Log out</h5>
-                    <i class='bx bx-log-out bx-lg'></i></br>
-                    <button class="btn btn-primary">Click Me</button>
-                </div>
-                </center> -->
-            </div>
-            <!-- for spacing -->
-            <div class="col-lg-4 col-sm-6">
-                <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Profile</h5>
-                    <i style="color:#cf3c4f" class='bx bx-user-circle bx-lg'></i></br>
-                    <a href="profile.php" class="btn btn-danger">Click Me</a>
-                </div>
-                </center>
-            </div>
-            <!-- for spacing -->
-            <div class="col-lg-4 col-sm-6">
-                <!-- <center>
-                <div class="service card-effect">
-                    <h5 class="mt-1 mb-2">Log out</h5>
-                    <i class='bx bx-log-out bx-lg'></i></br>
-                    <button class="btn btn-primary">Click Me</button>
-                </div>
-                </center> -->
-            </div>
-            <!-- for spacing -->
-        </div>
-    </div>
-          </div>
- 
-</section>
+        </section>
 
       <script src="js/script.js"></script>
- 
+
  
 </body>
 

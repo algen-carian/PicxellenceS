@@ -19,7 +19,7 @@ class adminloginController extends Controller
         ]);    
         
         Auth::attempt($request->only('email','password'));
-
+        
         if(auth()->user()->is_Admin==1){
             return redirect()->intended('admindashboard')->with('message', 'Successfuly Logged In');
         }else{
