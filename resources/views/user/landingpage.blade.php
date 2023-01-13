@@ -67,19 +67,22 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                      <ul class="navbar-nav">
                         <li class="nav-item">
-                           <a class="nav-link" href="index">Home</a>
+                           <a class="nav-link" href="#index">Home</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="about">About</a>
+                           <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="Services">Services</a>
+                           <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link " href="Blog">Blog</a>
+                           <a class="nav-link " href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link " href="Contact">Contact</a>
+                           <a class="nav-link " href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="userlogin">Userlogin</a>
                         </li>
                      </ul>
                   </div>
@@ -91,7 +94,7 @@
                   <ul>
                      <li class="active"><a href="#index">Home</a></li>
                      <li><a href="#about">About</a></li>
-                     <li><a href="#services">Services</a></li>
+                     <li><a href="#service">Services</a></li>
                      <li><a href="#blog">Blog</a></li>
                      <li><a href="#contact">Contact us</a></li>
                      <li><a href="userlogin">userlogin</a></li>
@@ -345,11 +348,11 @@
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Contact:</label>
-                                        <input name="contact"  class="form-control shadow" id="contact" required>
+                                        <input name="contact"  type="number" class="form-control shadow" id="contact" required>
                                     </div>
                                     <div class="form-group" style="width:35%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Alternate Number:</label>
-                                        <input name="alternate"  class="form-control shadow" id="alternate" required>
+                                        <input name="alternate"  type="number" class="form-control shadow" id="alternate" required>
                                     </div>
                                     
                                     <div class="form-group" style="width:30%;padding:2%;float:left;">

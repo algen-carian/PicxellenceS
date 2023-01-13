@@ -231,7 +231,7 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background2.jpg);
     height: auto;
     background-size: 100%;
     padding: 0px 0px 20px 0px;
@@ -337,7 +337,7 @@ button {
 
 .header_main {
     width: 100%;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/background2.jpg);
     background-size: 100%;
     padding: 10px 0px 0px 0px;
 }
@@ -474,6 +474,7 @@ button {
 /* about section start */
 
 .about_section {
+    background-image:url(../images/event7.jpg) ;
     width: 100%;
     float: left;
     padding-bottom: 90px;
@@ -544,7 +545,7 @@ button {
 .blog_section {
     width: 100%;
     float: left;
-    background-image: url(../images/event5.avif);
+    background-image: url(../images/background1.jfif);
     height: auto;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -896,7 +897,7 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-image: url(../images/event3.jpg);
+    background-image: url(../images/background.jpg);
     height: auto;
     padding-top: 250px;
     background-size: 100% 100%;

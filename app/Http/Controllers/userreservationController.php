@@ -7,6 +7,7 @@ use App\Models\reservation;
 use App\Models\r_event;
 use App\Models\event;
 use DB;
+use Illuminate\Support\Facades\Mail as FacadesMail;
 
 class userreservationController extends Controller
 {
@@ -83,7 +84,20 @@ class userreservationController extends Controller
                     //              ->from($mail_data['fromEmail'],$mail_data['fromName'])
                     //              ->subject($mail_data['Subject']);
                     // });
-
+                    $email = $request->email;
+                    FacadesMail::send(
+                        'user.emailTemplate',
+                        [
+                            'name' => "Algen",
+                            'email' => "201911008@gordoncollege.edu.ph",
+                            'comment' => "Comment"
+                        ],
+                        function ($message) use ($email) {
+                            $message->from($address = '201911008@gordoncollege.edu.ph', $name = "Photography Picxellence");
+                            $message->to($email, 'recipient')
+                                ->subject('Your Website Contact Form');
+                        }
+                    );
 
                     return back()->with('Success','Reserve successfuly !, Please check your email for confirmation.');
                
@@ -98,12 +112,26 @@ class userreservationController extends Controller
            
     }
     public function updateStatus($id){
-       
         $event = reservation::find($id);
         if ($event->event_status == "Approved") {
             $event->event_status = 'Finish';
         }else{
             $event->event_status = 'Approved';
+
+            $email = $event->email;
+            FacadesMail::send(
+                'user.emailTemplate',
+                [
+                    'name' => "Algen",
+                    'email' => "201911008@gordoncollege.edu.ph",
+                    'comment' => "Comment"
+                ],
+                function ($message) use ($email) {
+                    $message->from($address = '201911008@gordoncollege.edu.ph', $name = "Photography Picxellence");
+                    $message->to($email, 'recipient')
+                        ->subject('Your reservation has been approved');
+                }
+            );
         }
 
         $event->save();

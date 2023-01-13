@@ -17,6 +17,7 @@
     
     <!-- side -->
     @extends('admin.menu')
+    
       <!-- front end header indicator -->
       <div class = "home-section">
         <center>

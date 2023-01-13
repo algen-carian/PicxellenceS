@@ -54,7 +54,15 @@
                     <input type="password" name="password" id="password" class="form-control"  placeholder="Password">
                   </div>
                   <input name="submit" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
-
+                                    <center>
+                  <script>
+                  function goBack()
+                    {
+                    window.history.back()
+                    }
+                  </script>
+                  Go back to website? <input type="button" value="Back" onclick="goBack()"/>
+                  </center>
                  <!-- <center>
             <button type="submit" class= "btn btn-primary "> login </button>  
           </center>-->

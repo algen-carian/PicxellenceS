@@ -17,6 +17,7 @@
    
         <!-- side -->
         @extends('admin.menu')
+      
 
         <section class="service-section" style="padding:10%;">
           <div class="text_permission">
@@ -44,6 +45,7 @@
                             <td>
                                 @if($ev->event_status == "Pending")
                                     <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="btn btn-primary">Approve</button></a>
+                                    
                                     <a href="{{route('updateCancel',$ev->reservation_id)}}"><button class="btn btn-danger">Cancel</button></a>
                                 @endif
                                 @if($ev->event_status == "Approved")
@@ -72,6 +74,7 @@
         </section>
 
       <script src="js/script.js"></script>
+
 
  
 </body>

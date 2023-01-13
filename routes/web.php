@@ -18,6 +18,8 @@ use App\Http\Controllers\userprofileController;
 use App\Http\Controllers\usereventController;
 use App\Http\Controllers\useraboutController;
 use App\Http\Controllers\landingpageController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,7 +34,6 @@ use App\Http\Controllers\landingpageController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
 
 
 

@@ -50,7 +50,7 @@
                 </a>
                 <span class="tooltip">Profile</span>
             </li> -->
-            <a href = "/adminlogin">
+            <a href = "/">
                 <li class="profile">
                     <div class = "text_logout">Log-Out</div>
                     <i class='bx bx-log-out' id="log_out" ></i>

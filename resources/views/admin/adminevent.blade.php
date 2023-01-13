@@ -17,6 +17,7 @@
    
         <!-- side -->
         @extends('admin.menu')
+       
 
         <section class="service-section" style="padding:10%;">
           <div class="text_permission">
