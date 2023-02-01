@@ -8,6 +8,7 @@ use App\Http\Controllers\admininventoryController;
 use App\Http\Controllers\adminprofileController;
 use App\Http\Controllers\adminaboutController;
 use App\Http\Controllers\admineventController;
+use App\Http\Controllers\sidemenuController;
 
 
 use App\Http\Controllers\userdashboardController;
@@ -63,7 +64,10 @@ Route::get('/adminprofile', function () {
 });
 //ADMINEVENT
 Route::get('/adminevent',[admineventController::class, 'index']);
-
+//SIDEMENU
+Route::get('/sidemenu', function () {
+    return view('admin.sidemenu');
+});
 
 
 
@@ -117,6 +121,8 @@ Route::get('/Reservation',[admininventoryController::class, 'index']);
 Route::get('/adminprofile',[adminprofileController::class, 'index']);
 //ADMINABOUT
 Route::get('/adminabout',[adminaboutController::class, 'index']);
+//SIDEMENU
+Route::get('/sidemenu',[sidemenuController::class, 'index']);
 
 
 //USERSIGNUPFORM

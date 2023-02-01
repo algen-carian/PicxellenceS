@@ -36,6 +36,11 @@
       <link rel="stylesheet" href="../assets/style-lp/css/owl.carousel.min.css">
       <link rel="stylesheet" href="../assets/style-lp/css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
    </head>
    <body>
   
@@ -97,7 +102,7 @@
                      <li><a href="#service">Services</a></li>
                      <li><a href="#blog">Blog</a></li>
                      <li><a href="#contact">Contact us</a></li>
-                     <li><a href="userlogin">userlogin</a></li>
+                     <li><a href="userlogin">Login</a></li>
                   </ul>
                </div>
             </div>
@@ -132,7 +137,7 @@
                      </div>
                   </div>
                   <div class="read_bt">
-                    <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                    <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="reservenow">
                         Reserve Now!
                     </a>
                 </div> 
@@ -357,7 +362,7 @@
                                     
                                     <div class="form-group" style="width:30%;padding:2%;float:left;">
                                         <label for="message-text" class="col-form-label">Date of Event:</label>
-                                        <input name="Event"  type="date" class="form-control shadow"  id="Event" required>
+                                        <input name="Event"  class="form-control shadow"  id="datepicker" autocomplete="off"  required >
                                     </div>    
                                       
                                     <div class="form-group" style="width:50%;padding:2%;float:left;">
@@ -426,6 +431,36 @@
       <script src="../assets/style-lp/js/owl.carousel.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
 
+      <script>
+
+         let disabledDates = [];
+
+         document.getElementById("reservenow").onclick = function() 
+         {
+            var reserve = {!! json_encode($reservation) !!};
+
+           
+            reserve.forEach(element => {
+               disabledDates.push(element.Event_date);
+            });
+            console.log(disabledDates);
+
+         };
+
+
+        $(function() {
+
+         var currentDate = new Date();
+            $("#datepicker").datepicker({
+               beforeShowDay: function(date) {
+                  let formattedDate = $.datepicker.formatDate("yy-mm-dd", date);
+                  return [disabledDates.indexOf(formattedDate) == -1];
+               }
+            });   
+            
+         });
+       
+      </script>
       <!-- for dropdown --> 
       <!-- <script>
 

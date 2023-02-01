@@ -1,91 +1,160 @@
-<div class="sidebar" style = "padding-left: 0;">
-        <div class="logo-details">
-            <i class='bx bxl-heart-square icon'></i>
-            <div class="logo_name"><br><br><br>
-                <img src="assets/picxellence.png" alt="ADMIN" width="100" height="100">
-                <a href = "/adminlogin" style = "text-decoration: none; color: #fff;">Picxellence</a>
-            </div>
-            <i class='bx bx-menu' id="btn"></i>
-        </div>
-        <br><br><br>
-        <ul class="nav-list" style = "padding-left: 15px;">
-          <!-- <li>
-              <i class='bx bx-search' ></i>
-             <input type="text" placeholder="Search...">
-             <span class="tooltip">Search</span>
-          </li> -->
-            <li>
-            <a href="admindashboard">
-                <i class='bx bx-grid-alt'></i>
-                <span class="links_name">Dashboard</span>
-            </a>
-                <span class="tooltip">Dashboard</span>
-            </li>
-         
-            <li>
-                <a href="Reservation">
-                    <i class='bx bx-money' ></i>
-                    <span class="links_name">Reservation</span>
-                </a>
-                <span class="tooltip">Reservation</span>
-            </li>
-            <li>
-                <a href="adminhistory">
-                    <i class='bx bx-laptop' ></i>
-                    <span class="links_name">History</span>
-                </a>
-                <span class="tooltip">History</span>
-            </li>
-            <li>
-                <a href="/adminevent">
-                    <i class='bx bx-calendar' ></i>
-                    <span class="links_name">Event</span>
-                </a>
-                <span class="tooltip">Event</span>
-            </li>
-            <!-- <li>
-                <a href="adminprofile">
-                    <i class='bx bx-user-circle' ></i>
-                    <span class="links_name">Admin Profile</span>
-                </a>
-                <span class="tooltip">Profile</span>
-            </li> -->
-            <a href = "/">
-                <li class="profile">
-                    <div class = "text_logout">Log-Out</div>
-                    <i class='bx bx-log-out' id="log_out" ></i>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                           <ion-icon name="camera-outline"></ion-icon>
+                        </span>
+                        <span class="title">Pixcellecense</span>
+                    </a>
                 </li>
-            </a>
-        </ul>
-      </div>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <!-- <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="today-outline"></ion-icon>
+                        </span>
+                        <span class="title">Reservation</span>
+                    </a>
+                </li> -->
+
+                <!-- ================== Dinako nag lagay reservation saka history sa sidebar since
+                
+                pwede siya ma access sa dashboard na using "view all" button hehe ================ -->
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title">Event</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+
+            <!-- =============== top bar start =============== -->
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/icon.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- ============= top bar end =============== -->
 
 
-      
-      <script src="js/script.js"></script>
- <script>
-    // alert("Welcome Admin")
-let sidebar = document.querySelector(".sidebar");
-let closeBtn = document.querySelector("#btn");
-let searchBtn = document.querySelector(".bx-search");
- 
- 
-closeBtn.addEventListener("click", ()=>{
-  sidebar.classList.toggle("open");
-  menuBtnChange();//calling the function(optional)
-});
- 
-searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-  sidebar.classList.toggle("open");
-  menuBtnChange(); //calling the function(optional)
-});
+            <!-- ================= Insert content here algenaticsx =============== -->
 
-// following are the code to change sidebar button(optional)
-function menuBtnChange() {
- if(sidebar.classList.contains("open")){
-   closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
- }else {
-   closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
- }
-}
-</script>
- 
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,504</div>
+                        <div class="cardName">Reservations</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="today-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Services</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">284</div>
+                        <div class="cardName">Events</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">P7,842</div>
+                        <div class="cardName">Revenue</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================ Reservation List ================= -->
+            <div class="details">
+                <div class="recentReservations">
+                    <div class="cardHeader">
+                        <h2>Recent Reservations</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -13,7 +13,6 @@ use DB;
 class admindashboardController extends Controller
 {
     public function index(){
-        
         $Revenue = DB::table('r_events')
         ->join('events', 'r_events.event_id', '=', 'events.id')
         ->select('events.*', 'r_events.*')

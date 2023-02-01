@@ -16,8 +16,9 @@ class userreservationController extends Controller
     }
 
     public function reserve(Request $request,reservation $reservation,r_event $event){
-            
-          
+        
+            $evs = explode('/', $request->Event);
+
             $reservation = new reservation();
             $reservation->fname = $request->fname;
 
@@ -35,7 +36,8 @@ class userreservationController extends Controller
             $reservation->contact = $request->contact;
             $reservation->alternate = $request->alternate;
             $reservation->event_status = "Pending";
-            $reservation->Event_date = $request->Event;
+
+            $reservation->Event_date = $evs[2]."-".$evs[0]."-".$evs[1];
 
             $res = $reservation->save();
 
