@@ -133,7 +133,7 @@ body {
 .main {
   position: absolute;
   width: calc(100% - 300px);
-  left:300px;
+  left: 300px;
   min-height: 100vh;
   background: var(--white);
   transition: 0.5s;
@@ -265,20 +265,81 @@ body {
   width: 100%;
   padding: 20px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: 2fr 1fr; */
   grid-gap: 30px;
   /* margin-top: 10px; */
+  overflow: auto;
 }
 
-.details .recentOrders {
-  position: relative;
-  display: grid;
-  min-height: 500px;
-  background: var(--white);
-  padding: 20px;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-  border-radius: 20px;
+/* ========= buttons ========== */
+
+.btn-approve {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    z-index: 1;
+    font-size: large;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+  }
+
+  .btn-approve:hover {
+    color: #fff;
+    background-color: #5dbc73;
+  }
+
+  .btn-cancel {
+    background-color: #DC3545;
+    color: #fff;
+    border: none;
+    z-index: 1;
+    font-size: large;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+  }
+
+  .btn-cancel:hover {
+    color: #fff;
+    background-color: #e35f6c;
+  }
+
+  .btn-view {
+    background-color: #0D6EFD;
+    color: #fff;
+    border: none;
+    z-index: 1;
+    font-size: large;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+  }
+
+  .btn-view:hover {
+    color: #fff;
+    background-color: #5a99f7;
+  }
+
+
+.pagination a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
 }
+
+.pagination a.active{
+    background-color: var(--blue);
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active){
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
 
 .details .cardHeader {
   display: flex;
@@ -306,29 +367,7 @@ body {
 .details table thead td {
   font-weight: 600;
 }
-.details .recentOrders table tr {
-  color: var(--black1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.details .recentOrders table tr:last-child {
-  border-bottom: none;
-}
-.details .recentOrders table tbody tr:hover {
-  background: var(--blue);
-  color: var(--white);
-}
-.details .recentOrders table tr td {
-  padding: 10px;
-}
-.details .recentOrders table tr td:last-child {
-  text-align: end;
-}
-.details .recentOrders table tr td:nth-child(2) {
-  text-align: end;
-}
-.details .recentOrders table tr td:nth-child(3) {
-  text-align: center;
-}
+
 .status.approved {
   padding: 2px 4px;
   background: #77DD77;
@@ -390,12 +429,12 @@ body {
   padding: 12px 10px;
 }
 .recentReservations table tr td h4 {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.2rem;
 }
 .recentReservations table tr td h4 span {
-  font-size: 14px;
+  font-size: 40px;
   color: var(--black2);
 }
 .recentReservations table tr:hover {

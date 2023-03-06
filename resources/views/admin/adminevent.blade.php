@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>adminevent</title>
+    <title>ADMINEVENT</title>
 
-   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!-- for boxicons -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/sidebar2.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
 
+    <link rel="stylesheet" href="assets/css/sidebar2.css">
+ 
 </head>
-<body id = "boody">
-   
 
-<div class="container">
+<body>
+    
+
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        
         <div class="navigation">
             <ul>
                 <li>
+                <br>
                     <a href="#">
-                        <span class="icon">
-                           <ion-icon name="camera-outline"></ion-icon>
+                    <span class="icon">
+                           <!-- <ion-icon name="camera-outline"></ion-icon> -->
                         </span>
-                        <span class="title">Picxellence</span>
+                        <span class="title"><img src="../assets/style-lp/images/picxellence.png" width="100" height="100" alt=""></span>
                     </a>
                 </li>
+                <br>
 
                 <li>
                     <a href="sidemenu">
@@ -40,7 +45,7 @@
                 <li>
                     <a href="Reservation">
                         <span class="icon">
-                            <ion-icon name="home-outline"></ion-icon>
+                            <ion-icon name="clipboard-outline"></ion-icon>
                         </span>
                         <span class="title">Reservation</span>
                     </a>
@@ -64,14 +69,25 @@
                     </a>
                 </li>
 
-                
+               
+                <li>
+                    <a href="/">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+
             </ul>
         </div>
 
-
+        <!-- ========================= Main ==================== -->
         <div class="main">
+            
 
-        <div class="topbar">
+            <!-- =============== top bar start =============== -->
+            <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
@@ -79,6 +95,7 @@
                 <div class="search">
                     <label>
                         <input type="text" placeholder="Search here">
+             
                     </label>
                 </div>
 
@@ -86,6 +103,10 @@
                     <img src="../assets/style-lp/images/picxellence.png" alt="">
                 </div>
             </div>
+            
+
+            <!-- ============= top bar end =============== -->
+
 
         <!-- side -->
 
@@ -128,8 +149,8 @@
                             <th scope="col">Title</th>
                             <th scope="col">Type of Event</th>
                             <th scope="col">Price</th>
-                    
                     </thead>
+
                     <tbody>
                         @foreach ($Events as $ev)
                         <tr>
@@ -138,8 +159,7 @@
                             <td>{{$ev->event_content}}</td>
                             <td>{{$ev->event_price}}</td>
                         </tr>				
-                        @endforeach
-                        
+                        @endforeach   
                     </tbody>
                 </table>
                 
@@ -154,6 +174,9 @@
                 </div>        
             </div>
         </section>
+
+
+<!-- sample table -->
 
  <!-- =========== Scripts =========  -->
  <script src="assets/js/main.js"></script>

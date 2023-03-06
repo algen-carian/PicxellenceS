@@ -18,7 +18,7 @@ class userloginController extends Controller
         ]);    
         if (Auth::attempt($request->only('email','password'))){
             if(auth()->user()->is_Admin!=1){
-                return redirect()->intended('userdashboard')->with('message', 'Successfuly Logged In');     
+                return redirect()->intended('admindashboard')->with('message', 'Successfuly Logged In');     
             }else{
                 return back()->with('status', 'Invalid login details');
             }
@@ -28,6 +28,6 @@ class userloginController extends Controller
     }
     public function destroy(){
         Auth::logout();
-        return redirect('/userdashboard');
+        return redirect('/sidemenu');
     }
 }

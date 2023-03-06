@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admindashboard</title>
+    <title>ADMINHISTORY</title>
 
    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!-- for boxicons -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- <link rel = "stylesheet" href = " {{ URL::asset('assets/css/admindashboard.css'); }}"> -->
-    <link rel="stylesheet" href="assets/css/sidebar2.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    
+    <link rel="stylesheet" href="assets/css/sidebar3.css">
 </head>
-<body id = "boody">
+<body>
    
 <div class="container">
         <div class="navigation">
             <ul>
                 <li>
+                <br>
                     <a href="#">
                         <span class="icon">
-                           <ion-icon name="camera-outline"></ion-icon>
+                           <!-- <ion-icon name="camera-outline"></ion-icon> -->
                         </span>
-                        <span class="title">Picxellence</span>
+                        <img src="../assets/style-lp/images/picxellence.png" width="100" height="100" alt="">
                     </a>
                 </li>
 
@@ -40,7 +39,8 @@
                 <li>
                     <a href="Reservation">
                         <span class="icon">
-                            <ion-icon name="home-outline"></ion-icon>
+                          <ion-icon name="clipboard-outline"></ion-icon>
+                        </span>
                         </span>
                         <span class="title">Reservation</span>
                     </a>
@@ -61,6 +61,15 @@
                             <ion-icon name="settings-outline"></ion-icon>
                         </span>
                         <span class="title">History</span>
+                    </a>
+                </li>
+              
+                <li>
+                    <a href="/">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
                     </a>
                 </li>
 
@@ -87,7 +96,7 @@
                 </div>
             </div>
 
-<!-- side -->
+            <!-- side -->
     
 
 
@@ -143,6 +152,15 @@
         </section>
 
       <script src="js/script.js"></script>
+      
+ <!-- =========== Scripts =========  -->
+ <script src="assets/js/main.js"></script>
+
+ 
+<!-- ====== ionicons ======= -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
  
 </body>
 

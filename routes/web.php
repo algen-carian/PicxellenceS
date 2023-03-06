@@ -65,10 +65,10 @@ Route::get('/adminprofile', function () {
 //ADMINEVENT
 Route::get('/adminevent',[admineventController::class, 'index']);
 //SIDEMENU
-Route::get('/sidemenu', function () {
-    return view('admin.sidemenu');
-});
 
+Route::get('/sidemenu', function () {
+    return redirect('/admin.sidemenu');
+});
 
 
 //USERLOGIN
@@ -110,7 +110,7 @@ Route::get('/userabout', function () {
 // });
 
 //ADMINLOGIN
-Route::post('/adminAuth',[adminloginController::class, 'store']);
+Route::post('/adminAuth',[sidemenuController::class, 'store']);
 //ADMINDASHBOARD
 Route::get('/admindashboard',[admindashboardController::class, 'index']);
 //ADMINHISTORY
@@ -122,7 +122,7 @@ Route::get('/adminprofile',[adminprofileController::class, 'index']);
 //ADMINABOUT
 Route::get('/adminabout',[adminaboutController::class, 'index']);
 //SIDEMENU
-Route::get('/sidemenu',[sidemenuController::class, 'index']);
+Route::get('/admin.sidemenu',[sidemenuController::class, 'store']);
 
 
 //USERSIGNUPFORM

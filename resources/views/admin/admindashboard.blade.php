@@ -1,43 +1,28 @@
-<!DOCTYPE html> 
-<html lang="en" dir="ltr">
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admindashboard</title>
-
+    <title>Pixcellence</title>
+    <!-- ======= Styles ====== -->
     <link rel="stylesheet" href="assets/css/sidebar.css">
-   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!-- for boxicons -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel = "stylesheet" href = " {{ URL::asset('assets/css/admindashboard.css'); }}">
-    <link rel = "stylesheet" href = " {{ URL::asset('assets/css/sidebar.css'); }}">
-    <link rel = "stylesheet" href = " {{ URL::asset('assets/css/style.css'); }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+
+ 
 </head>
 
-<body id = "boody">
 
+<body>
+        
+    @include('admin/sample')
 
-      <!-- front end header indicator -->
-      <div class = "home-section">
-        <center>
-          <div class="text">Welcome back! Today is <span id='date'>
-            {{  $formattedDate = date('jS \of F, Y', strtotime(date('Y-m-d'))); }}
-           </span>
-            </div>
-        </center>
-      </div>
-      <br>
-      <br>
     <section class="service-section">
         <div class="text_permission">
             <div class="container">
                 
-      
-
-
         <!--======================================================  Content  ====================================================-->
                 
                             <div class="row" style="margin-left: auto;margin-right: auto;width: 80%;padding: 10%px;" >
@@ -286,7 +271,12 @@
         </div>
     </section>
 
+      <!-- =========== Scripts =========  -->
+      <script src="assets/js/main.js"></script>
+
+<!-- ====== ionicons ======= -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
- 

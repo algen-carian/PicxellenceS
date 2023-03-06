@@ -23,8 +23,9 @@ body {
 }
 
 .container {
-  position: relative;
+  position: absolute;
   width: 100%;
+ 
 }
 
 /* =============== Navigation ================ */
@@ -131,9 +132,9 @@ body {
 
 /* ===================== Main ===================== */
 .main {
-  position: absolute;
-  width: calc(100% - 300px);
-  left:300px;
+  position: relative;
+  width: calc(100% - 200px);
+  left: 300px;
   min-height: 100vh;
   background: var(--white);
   transition: 0.5s;

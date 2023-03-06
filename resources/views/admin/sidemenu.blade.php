@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixcellecense</title>
+    <title>Pixcellence</title>
     <!-- ======= Styles ====== -->
     <link rel="stylesheet" href="assets/css/sidebar.css">
 
@@ -15,18 +15,24 @@
 
 
 <body>
+    
+
     <!-- =============== Navigation ================ -->
     <div class="container">
+        
         <div class="navigation">
             <ul>
                 <li>
+                <br>
                     <a href="#">
                         <span class="icon">
-                           <ion-icon name="camera-outline"></ion-icon>
+                           <!-- <ion-icon name="camera-outline"></ion-icon> -->
                         </span>
-                        <span class="title">Picxellence</span>
+                        
+                        <span class="title"><img src="../assets/style-lp/images/picxellence.png" width="100" height="100" alt=""></span>
                     </a>
                 </li>
+                <br>
 
                 <li>
                     <a href="sidemenu">
@@ -39,7 +45,7 @@
                 <li>
                     <a href="Reservation">
                         <span class="icon">
-                            <ion-icon name="home-outline"></ion-icon>
+                            <ion-icon name="clipboard-outline"></ion-icon>
                         </span>
                         <span class="title">Reservation</span>
                     </a>
@@ -63,12 +69,22 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="/">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+
               
             </ul>
         </div>
 
         <!-- ========================= Main ==================== -->
         <div class="main">
+            
 
             <!-- =============== top bar start =============== -->
             <div class="topbar">
@@ -87,6 +103,7 @@
                     <img src="../assets/style-lp/images/picxellence.png" alt="">
                 </div>
             </div>
+            
 
             <!-- ============= top bar end =============== -->
 
@@ -130,7 +147,8 @@
                     </div>
 
                     <div class="iconBx">
-                        <ion-icon name="calendar-outline"></ion-icon>
+                    <ion-icon name="document-attach-outline"></ion-icon>
+                        </span>
                     </div>
                 </div>
 
@@ -151,7 +169,7 @@
                 <div class="recentReservations">
                     <div class="cardHeader">
                         <h2>Recent Reservations</h2>
-                        <a href="#" class="btn">View All</a>
+                        <a href="Reservation" class="btn">View All</a>
                     </div>
 
                     <table>
@@ -237,7 +255,7 @@
                 <div class="recentReservations">
                     <div class="cardHeader">
                         <h2>Recent Customers</h2>
-                         <a href="#" class="btn">View All</a>
+                         <a href="adminevent" class="btn">View All</a>
                     </div>
 
                     <table>

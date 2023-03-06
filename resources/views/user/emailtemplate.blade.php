@@ -1,7 +1,7 @@
 <html>
 
 <body>
-    Reserve successfully!.
+"Your reservation has been successfully made."
 </body>
 
 </html>

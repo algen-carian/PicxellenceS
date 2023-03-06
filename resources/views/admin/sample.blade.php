@@ -1,40 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixcellecense</title>
-    <!-- ======= Styles ====== -->
-    <link rel="stylesheet" href="assets/css/sidebar.css">
+    
 
-    </head>
-    <body>
     <!-- =============== Navigation ================ -->
     <div class="container">
+        
         <div class="navigation">
             <ul>
                 <li>
+                <br>
                     <a href="#">
                         <span class="icon">
-                           <ion-icon name="camera-outline"></ion-icon>
+                           <!-- <ion-icon name="camera-outline"></ion-icon> -->
                         </span>
-                        <span class="title">Pixcellecense</span>
+                        
+                        <span class="title"><img src="../assets/style-lp/images/picxellence.png" width="100" height="100" alt=""></span>
                     </a>
                 </li>
+                <br>
 
                 <li>
-                    <a href="#">
+                    <a href="sidemenu">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
+                <li>
+                    <a href="Reservation">
+                        <span class="icon">
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </span>
+                        <span class="title">Reservation</span>
+                    </a>
+                </li>
 
                 <li>
-                    <a href="#">
+                    <a href="adminevent">
                         <span class="icon">
                             <ion-icon name="calendar-outline"></ion-icon>
                         </span>
@@ -43,30 +45,47 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="adminhistory">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
                         </span>
-                        <span class="title">Settings</span>
+                        <span class="title">History</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
-                        <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                        </span>
-                        <span class="title">Password</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
+                    <a href="landingpage">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
                         </span>
                         <span class="title">Sign Out</span>
                     </a>
                 </li>
+
+              
             </ul>
         </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            
+            <!-- =============== top bar start =============== -->
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+             
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="../assets/style-lp/images/picxellence.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>

@@ -12,21 +12,23 @@ use DB;
 
 class sidemenuController extends Controller
 {
-    public function index(){
+    public function store(){
         
-    $Revenue = DB::table('r_events')
-    ->join('events', 'r_events.event_id', '=', 'events.id')
-    ->select('events.*', 'r_events.*')
-    ->sum('events.event_price');
+        $Revenue = DB::table('r_events')
+        ->join('events', 'r_events.event_id', '=', 'events.id')
+        ->select('events.*', 'r_events.*')
+        ->sum('events.event_price');
 
-    $Events = event::select('*')->where('event_content','Event')->count();
-    $Reservation = reservation::select('*')
-    ->where('event_status','!=','Finish')
-    ->where('event_status','!=','Canceled')
-    ->count();
-    $Services = event::select('*')->where('event_content','Services')->count();
-    $data = [ $Revenue, $Events, $Reservation, $Services];
+        $Events = event::select('*')->where('event_content','Event')->count();
+        $Reservation = reservation::select('*')
+        ->where('event_status','!=','Finish')
+        ->where('event_status','!=','Canceled')
+        ->count();
+        $Services = event::select('*')->where('event_content','Services')->count();
+        $data = [ $Revenue, $Events, $Reservation, $Services];
+        $Services;
+        return view('admin.sidemenu',compact('data'));
+    }
+
   
-    return view('admin.sidemenu',compact('data'));
-}
 }

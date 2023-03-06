@@ -1,0 +1,11 @@
+.text_permission
+{
+    border-spacing: 0 15px;
+}
+ th {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+        margin: auto;
+      }
