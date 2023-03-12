@@ -10,6 +10,7 @@
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
       <title>CHRISJEM PHOTOGRAPHY</title>
+      <link rel="icon" type="" href="../assets/style-lp/images/picxellence.png">
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">

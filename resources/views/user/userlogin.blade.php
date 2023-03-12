@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>User Login Form</title>
+    <link rel="icon" type="" href="../assets/style-lp/images/picxellence.png">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!----CSS link----->
@@ -54,7 +56,12 @@
                     <input type="password" name="password" id="password" class="form-control"  placeholder="Password">
                   </div>
                   <input name="submit" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
+                  <!-- Remind Passowrd -->
                                     <center>
+                  <div id="formFooter">
+                          <a class="underlineHover" href="#">Forgot Password?</a>
+                  </div>
+
                   <script>
                   function goBack()
                     {
