@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/adminloginregistration.css">
 
     <title>ADMIN LOGIN</title>
+    <link rel="icon" type="" href="../assets/style-lp/images/picxellence.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 

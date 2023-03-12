@@ -896,7 +896,8 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-image: url(../images/footer-bg.png);
+    /* background-image: url(../images/footer-bg.png); */
+    background-color: #085a57;
     height: auto;
     padding-top: 250px;
     background-size: 100% 100%;
@@ -993,7 +994,7 @@ button {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #122c2d;
+    background-color: #07b7bd;
     height: auto;
 }
 
