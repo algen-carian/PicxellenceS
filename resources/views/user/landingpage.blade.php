@@ -140,7 +140,6 @@
                         <h1 class="banner_taital">Anniversary</h1>
                         <p class="banner_text">" I wish you a happy anniversary, my love. Remember the good times and leave the bad behind; reminisce about joyful memories while ignoring the sad. Take pleasure in a love that has endured so long that even angels are singing a song of joy.</p>
                      </div>
-                     
                    </div>
                   </div>
                   <div class="read_bt">
@@ -186,7 +185,7 @@
                      <div class="btn_main"><a href="#">Anniversary</a></div>
                   </div><br>
                   <div class="col-md-3"><br>
-                     <div><img src="../assets/christening3.jpeg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                     <div><img src="../assets/teambuilding.jpg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
                      <div class="btn_main"><a href="#">Team Building</a></div>
                   </div>
                </div>
@@ -215,10 +214,16 @@
       <!-- blog section start -->
       <div class="blog_section layout_padding" id="blog">
          <div class="container">
+         <!-- <video src="../assets/samplevid.mp4" controls>
+           sample video
+            </video> -->
             <h1 class="blog_taital">See Our  Video</h1>
             <p class="blog_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
             <div class="play_icon_main">
-               <div class="play_icon"><a href="#"><img src="../assets/style-lp/images/play-icon.png"></a></div>
+               <div class="play_icon">
+                  <a href="#"><video src="../assets/samplevid.mp4" controls>
+            </video></a> 
+               </div>
             </div>
          </div>
       </div>

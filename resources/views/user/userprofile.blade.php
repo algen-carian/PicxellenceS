@@ -33,7 +33,7 @@
             <li>
             <a href="userdashboard">
                 <i class='bx bx-grid-alt'></i>
-                <span class="links_name">Dashboard</span>
+                <span class="links_name">sidemenu</span>
             </a>
                 <span class="tooltip">Dashboard</span>
             </li>
