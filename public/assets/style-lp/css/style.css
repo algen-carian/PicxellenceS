@@ -897,9 +897,10 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-image: url(../images/background.jpg);
+    /* background-image: url(../images/background.jpg); */
+    background-color: #179c98;
     height: auto;
-    padding-top: 250px;
+    padding-top: 150px;
     background-size: 100% 100%;
     padding-bottom: 30px;
     background-repeat: no-repeat;

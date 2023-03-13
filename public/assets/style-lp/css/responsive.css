@@ -431,7 +431,8 @@
         margin: 0 auto;
     }
     .footer_section {
-        background-image: url(../images/event8.jpg);
+        /* background-image: url(../images/event8.jpg); */
+        background-color: #179c98;
         background-size: cover;
         padding: 50px 0px;
     }
@@ -629,7 +630,8 @@
         margin: 0 auto;
     }
     .footer_section {
-        background-image: url(../images/event11.jpg);
+        /* background-image: url(../images/event11.jpg); */
+        background-color: #179c98;
         background-size: cover;
         padding: 50px 0px;
     }

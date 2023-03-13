@@ -11,14 +11,12 @@
       <!-- site metas -->
       <title>CHRISJEM PHOTOGRAPHY</title>
       <link rel="icon" type="" href="../assets/style-lp/images/picxellence.png">
-      <link rel="icon" type="" href="../assets/style-lp/images/picxellence.png">
-      <link rel="icon" type="" href="../assets/style-lp/images/picxellence.png">
+
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
       <link rel="stylesheet" type="text/css" href="../assets/style-lp/css/bootstrap.min.css">
-
       <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
       <!-- style css -->
@@ -176,6 +174,14 @@
                   <div class="col-md-3">
                      <div><img src="../assets/christening3.jpeg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
                      <div class="btn_main"><a href="#">Christening</a></div>
+                  </div>
+                  <div class="col-md-3">
+                     <div><img src="../assets/anniversary.png" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                     <div class="btn_main"><a href="#">Anniversary</a></div>
+                  </div><br>
+                  <div class="col-md-3">
+                     <div><img src="../assets/christening3.jpeg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                     <div class="btn_main"><a href="#">Team Building</a></div>
                   </div>
                </div>
             </div>
