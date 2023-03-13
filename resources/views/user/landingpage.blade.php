@@ -134,8 +134,14 @@
                      <div class="container">
                         <h1 class="banner_taital">Christening</h1>
                         <p class="banner_text">"The grace of being is gift of baptism by washing in water. And in spirit of Christ Jesus. Whoever believes and is baptized will be saved, but whoever does not believe will be condemned.</p>
-                       
                      </div>
+                     <div class="carousel-item">
+                     <div class="container">
+                        <h1 class="banner_taital">Anniversary</h1>
+                        <p class="banner_text">" I wish you a happy anniversary, my love. Remember the good times and leave the bad behind; reminisce about joyful memories while ignoring the sad. Take pleasure in a love that has endured so long that even angels are singing a song of joy.</p>
+                     </div>
+                     
+                   </div>
                   </div>
                   <div class="read_bt">
                     <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="reservenow">
@@ -175,11 +181,11 @@
                      <div><img src="../assets/christening3.jpeg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
                      <div class="btn_main"><a href="#">Christening</a></div>
                   </div>
-                  <div class="col-md-3">
-                     <div><img src="../assets/anniversary.png" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                  <div class="col-md-3"><br>
+                     <div><img src="../assets/anniversary.jpg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
                      <div class="btn_main"><a href="#">Anniversary</a></div>
                   </div><br>
-                  <div class="col-md-3">
+                  <div class="col-md-3"><br>
                      <div><img src="../assets/christening3.jpeg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
                      <div class="btn_main"><a href="#">Team Building</a></div>
                   </div>

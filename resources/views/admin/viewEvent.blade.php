@@ -7,78 +7,79 @@
     <title>VIEWEVENT</title>
     <link rel="icon" type="" href="../assets/style-lp/images/picxellence.png">
    
+    <link rel="stylesheet" href="assets/css/sidebar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!-- for boxicons -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel = "stylesheet" href = " {{ URL::asset('assets/css/admindashboard.css'); }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
-<body id = "boody">
-   
-        <!-- side -->
-        <div class="sidebar" style = "padding-left: 0;">
-        <div class="logo-details">
-            <i class='bx bxl-heart-square icon'></i>
-            <div class="logo_name"><br><br><br>
-                <img src="assets/picxellence.png" alt="ADMIN" width="100" height="100">
-                <a href = "/adminlogin" style = "text-decoration: none; color: #fff;">Picxellence</a>
-            </div>
-            <i class='bx bx-menu' id="btn"></i>
-        </div>
-        <br><br><br>
-        <ul class="nav-list" style = "padding-left: 15px;">
-          <!-- <li>
-              <i class='bx bx-search' ></i>
-             <input type="text" placeholder="Search...">
-             <span class="tooltip">Search</span>
-          </li> -->
-            <li>
-            <a href="../sidemenu">
-                <i class='bx bx-grid-alt'></i>
-                <span class="links_name">Dashboard</span>
-            </a>
-                <span class="tooltip">Dashboard</span>
-            </li>
-         
-            <li>
-                <a href="../Reservation">
-                    <i class='bx bx-money' ></i>
-                    <span class="links_name">Reservation</span>
-                </a>
-                <span class="tooltip">Reservation</span>
-            </li>
-            <li>
-                <a href="../adminhistory">
-                    <i class='bx bx-laptop' ></i>
-                    <span class="links_name">History</span>
-                </a>
-                <span class="tooltip">History</span>
-            </li>
-            <li>
-                <a href="../adminevent">
-                    <i class='bx bx-calendar' ></i>
-                    <span class="links_name">Event</span>
-                </a>
-                <span class="tooltip">Event</span>
-            </li>
-            <!-- <li>
-                <a href="../adminprofile">
-                    <i class='bx bx-user-circle' ></i>
-                    <span class="links_name">Admin Profile</span>
-                </a>
-                <span class="tooltip">Profile</span>
-            </li> -->
-            <!-- <a href = "../adminlogin">
-                <li class="profile">
-                    <div class = "text_logout">Log-Out</div>
-                    <i class='bx bx-log-out' id="log_out" ></i>
+
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        
+        <div class="navigation">
+            <ul>
+                <li>
+                <br>
+                    <a href="#">
+                        <span class="icon">
+                           <!-- <ion-icon name="camera-outline"></ion-icon> -->
+                        </span>
+                        
+                        <span class="title"><img src="../assets/style-lp/images/picxellence.png" width="100" height="100" alt=""></span>
+                    </a>
                 </li>
-            </a> -->
-        </ul>
-      </div>
+                <br>
 
+                <li>
+                    <a href="sidemenu">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Reservation">
+                        <span class="icon">
+                            <ion-icon name="clipboard-outline"></ion-icon>
+                        </span>
+                        <span class="title">Reservation</span>
+                    </a>
+                </li>
 
-      
+                <li>
+                    <a href="adminevent">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title">Event</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="adminhistory">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">History</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+
+              
+            </ul>
+        </div>
+
 
  
         <section class="service-section" style="padding-left:10%;padding-top:5%;">
