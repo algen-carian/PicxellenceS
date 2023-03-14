@@ -115,33 +115,41 @@
                   <div class="carousel-item active">
                      <div class="container">
                         <h1 class="banner_taital">Birthday</h1>
-                        <p class="banner_text">Photographers and videographers work to capture still and moving moments respectively for a wide number of applications. Videography is used to create video content, and use audio equipment and video cameras to sound and capture moving scenes and document events. Photography creates visual content by capturing images of landscapes, events, and people.</p>
+                        <p class="banner_text">"Photographers and videographers work to capture still and moving moments respectively for a wide number of applications. Videography is used to create video content, and use audio equipment and video cameras to sound and capture moving scenes and document events. Photography creates visual content by capturing images of landscapes, events, and people."</p>
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="container">
                         <h1 class="banner_taital">Wedding</h1>
-                        <p class="banner_text">Your inspiration is better if it comes from many different sources, and your sensibilities will transform all those influences and inspiration into your own visual world. It’s like reading a book instead of watching a movie.</p>
+                        <p class="banner_text">"Your inspiration is better if it comes from many different sources, and your sensibilities will transform all those influences and inspiration into your own visual world. It’s like reading a book instead of watching a movie.</p>
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="container">
                         <h1 class="banner_taital">Debut</h1>
-                        <p class="banner_text">It’s your 18th birthday and its time to celebrate to the fullest! Make your 18th birthday an incredible day with our high quality photography and videography service.  Our team thinks out of the box producing modern and unique visual content appealing to younger generations. Count your age by friends, not years, your life by smile, not tears.</p>
+                        <p class="banner_text">"It’s your 18th birthday and its time to celebrate to the fullest! Make your 18th birthday an incredible day with our high quality photography and videography service.  Our team thinks out of the box producing modern and unique visual content appealing to younger generations. Count your age by friends, not years, your life by smile, not tears."</p>
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="container">
                         <h1 class="banner_taital">Christening</h1>
-                        <p class="banner_text">"The grace of being is gift of baptism by washing in water. And in spirit of Christ Jesus. Whoever believes and is baptized will be saved, but whoever does not believe will be condemned.</p>
+                        <p class="banner_text">"The grace of being is gift of baptism by washing in water. And in spirit of Christ Jesus. Whoever believes and is baptized will be saved, but whoever does not believe will be condemned."</p>
                      </div>
+                   </div>
                      <div class="carousel-item">
                      <div class="container">
                         <h1 class="banner_taital">Anniversary</h1>
-                        <p class="banner_text">" I wish you a happy anniversary, my love. Remember the good times and leave the bad behind; reminisce about joyful memories while ignoring the sad. Take pleasure in a love that has endured so long that even angels are singing a song of joy.</p>
+                        <p class="banner_text">"I wish you a happy anniversary, my love. Remember the good times and leave the bad behind; reminisce about joyful memories while ignoring the sad. Take pleasure in a love that has endured so long that even angels are singing a song of joy."</p>
                      </div>
                    </div>
-                  </div>
+                   <div class="carousel-item">
+                     <div class="container">
+                        <h1 class="banner_taital">Team Building</h1>
+                        <p class="banner_text">"The grace of being is gift of baptism by washing in water. And in spirit of Christ Jesus. Whoever believes and is baptized will be saved, but whoever does not believe will be condemned."</p>
+                       </div>
+                   </div>
+
+                  
                   <div class="read_bt">
                     <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="reservenow">
                         Reserve Now!
@@ -181,11 +189,11 @@
                      <div class="btn_main"><a href="#">Christening</a></div>
                   </div>
                   <div class="col-md-3"><br>
-                     <div><img src="../assets/anniversary.jpg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                     <div><img src="../assets/anniversary2.jpg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
                      <div class="btn_main"><a href="#">Anniversary</a></div>
                   </div><br>
                   <div class="col-md-3"><br>
-                     <div><img src="../assets/teambuilding.jpg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
+                     <div><img src="../assets/teambuilding1.jpg" class="services_img" style="max-height:300px;border-radius:9px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"></div>
                      <div class="btn_main"><a href="#">Team Building</a></div>
                   </div>
                </div>
@@ -221,7 +229,7 @@
             <p class="blog_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
             <div class="play_icon_main">
                <div class="play_icon">
-                  <a href="#"><video src="../assets/samplevid.mp4" controls>
+               <div class="play_icon"><a href="#"><img src="../assets/style-lp/images/play-icon.png"></a></div>
             </video></a> 
                </div>
             </div>
@@ -268,7 +276,7 @@
                                  <div class="quick_icon"><img src="../assets/style-lp/images/quick-icon.png"></div>
                               </div>
                               <div class="client_taital_right">
-                                 <h4 class="client_name">Dame</h4>
+                                 <h4 class="client_name">Algen</h4>
                                  <p class="customer_text">Customer</p>
                               </div>
                            </div>
@@ -285,7 +293,7 @@
                                  <div class="quick_icon"><img src="../assets/style-lp/images/quick-icon.png"></div>
                               </div>
                               <div class="client_taital_right">
-                                 <h4 class="client_name">Dame</h4>
+                                 <h4 class="client_name">Yuri</h4>
                                  <p class="customer_text">Customer</p>
                               </div>
                            </div>
@@ -296,7 +304,7 @@
             </div>
          </div>
       </div>
-      <!-- client section start -->
+      <!-- client section end -->
       <!-- choose section start -->
       <div class="choose_section layout_padding" id="contact">
          <div class="container">
