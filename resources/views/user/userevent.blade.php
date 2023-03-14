@@ -86,9 +86,8 @@
      
 <section class="hero-section">
   <div class="card-grid">
-      <div class="card__background" style="background-image: url('birthday3.png');>
-    </div>
-    </a> 
+      <div class="card__background" style="background-image: url('birthday3.png')
+     </div>
       <div class="card__content">
       <div class="card__background" style="background-image: url(assets/event1.jpg)"></div>
         <p class="card__category">Category</p>

@@ -373,6 +373,7 @@
     .padding_right_0 {
         padding-right: 15px;
     }
+    /* <-- Mobile View 615 x 882--> */
     .blog_section {
         background-image: url(../images/debut.jpg);
         background-size: cover;
@@ -487,6 +488,7 @@
         top: 90%;
         display: none;
     }
+        /* <-- Mobile View 575 x 882--> */
     .header_section {
         background-image: url(../images/event8.jpg);
         background-size: cover;
@@ -555,6 +557,12 @@
     }
     .services_img {
         margin-top: 40px;
+    }
+
+    .about_section {
+        background-image: url(../images/wedding2.jpg);
+        background-size: cover;
+        padding: 50px 0px;
     }
     .about_section {
         padding: 50px 0px;

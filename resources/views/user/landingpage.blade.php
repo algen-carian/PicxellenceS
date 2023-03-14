@@ -221,16 +221,15 @@
       <!-- about section end -->
       <!-- blog section start -->
       <div class="blog_section layout_padding" id="blog">
-         <div class="container">
-         <!-- <video src="../assets/samplevid.mp4" controls>
-           sample video
-            </video> -->
+         <div class="videoplay">
+            <video src="../assets/samplevid.mp4">
+            sample video
+               </video>
             <h1 class="blog_taital">See Our  Video</h1>
             <p class="blog_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
             <div class="play_icon_main">
-               <div class="play_icon">
-               <div class="play_icon"><a href="#"><img src="../assets/style-lp/images/play-icon.png"></a></div>
-            </video></a> 
+               <div class="play_icon"><a href="#">
+            <img src="../assets/style-lp/images/play-icon.png"></a></div>
                </div>
             </div>
          </div>
@@ -304,7 +303,7 @@
             </div>
          </div>
       </div>
-      <!-- client section end -->
+      <!-- client section ends -->
       <!-- choose section start -->
       <div class="choose_section layout_padding" id="contact">
          <div class="container">
@@ -444,7 +443,7 @@
                   </div>
             </div>
 
-      
+
       <!-- copyright section end -->
       <!-- Javascript files-->
       <script src="../assets/style-lp/js/jquery.min.js"></script>
@@ -501,7 +500,6 @@
          });
 
       </script> -->
-
 
    </body>
 </html>

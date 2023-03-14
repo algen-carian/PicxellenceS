@@ -30,7 +30,10 @@
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
 @import url(nice-select.css);
-
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
@@ -474,13 +477,16 @@ button {
 /* about section start */
 
 .about_section {
-    background-image:url(../images/event7.jpg) ;
+    background-image:url(../images/event1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     float: left;
     padding-bottom: 90px;
 }
 
 .about_taital_main {
+
     width: 100%;
     padding-left: 100px;
     padding-top: 70px;
@@ -494,15 +500,15 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #1f1f1f;
+    color: #087d81;
     font-weight: bold;
 }
 
 .about_text {
     width: 100%;
     float: left;
-    font-size: 16px;
-    color: #1f1f1f;
+    font-size: 20px;
+    color: #ffffff;
     margin: 0px;
     padding-top: 40px;
 }
@@ -532,15 +538,22 @@ button {
 }
 
 .about_img {
+    animation: fadeIn 1.5s;
     width: 100%;
     float: left;
+    opacity: 0%;
 }
+.about_img:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+  }
 
 
 /* contact section end */
 
 
 /* blog section start */
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -548,11 +561,14 @@ button {
     min-width: 100%;
     min-height: 100%;
   }
-  
+
+.videoplay{
+   
+}
 .blog_section {
     width: 100%;
     float: left;
-    background-image: url(../images/background1.jfif);
+    /* background-image: url(../images/background1.jfif); */
     height: auto;
     background-repeat: no-repeat;
     background-size: 100%;
