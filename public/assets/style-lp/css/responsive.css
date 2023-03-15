@@ -356,6 +356,26 @@
     }
     .services_img {
         margin-top: 40px;
+        
+    --s: 250px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: #4ECDC4; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid 
+
+    #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  
     }
     .about_section {
         padding: 50px 0px;
@@ -556,7 +576,7 @@
         margin-top: 30px;
     }
     .services_img {
-        margin-top: 40px;
+        margin-top: 40px;        
     }
 
     .about_section {

@@ -406,6 +406,7 @@ button {
 
 /* services section start */
 
+
 .services_section {
     width: 100%;
     float: left;
@@ -435,10 +436,29 @@ button {
 }
 
 .services_img {
-    width: 100%;
+    width: 500%;
     float: left;
     text-align: center;
+
+    --s: 250px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: #4ECDC4; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid 
+
+    #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: 0.3s;
 }
+img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+
 
 .btn_main {
     width: 170px;
@@ -563,7 +583,7 @@ button {
   }
 
 .videoplay{
-   
+    
 }
 .blog_section {
     width: 100%;
