@@ -10,14 +10,10 @@
     <!-- ======= Styles ====== -->
     <link rel="stylesheet" href="assets/css/sidebar.css">
 
-
- 
 </head>
 
 
 <body>
-    
-
     <!-- =============== Navigation ================ -->
     <div class="container">
         

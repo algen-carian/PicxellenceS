@@ -9,6 +9,7 @@ use App\Http\Controllers\adminprofileController;
 use App\Http\Controllers\adminaboutController;
 use App\Http\Controllers\admineventController;
 use App\Http\Controllers\sidemenuController;
+use App\Http\Controllers\viewEventController;
 
 
 use App\Http\Controllers\userdashboardController;
@@ -69,6 +70,11 @@ Route::get('/adminevent',[admineventController::class, 'index']);
 Route::get('/sidemenu', function () {
     return redirect('/admin.sidemenu');
 });
+//VIEWEVENT
+Route::get('/viewEvent', function () {
+    return view('admin.viewEvent');
+});
+
 
 
 //USERLOGIN
@@ -123,6 +129,8 @@ Route::get('/adminprofile',[adminprofileController::class, 'index']);
 Route::get('/adminabout',[adminaboutController::class, 'index']);
 //SIDEMENU
 Route::get('/admin.sidemenu',[sidemenuController::class, 'store']);
+//ADMINEVENT
+Route::get('/viewevent',[viewEventController::class, 'index']);
 
 
 //USERSIGNUPFORM
