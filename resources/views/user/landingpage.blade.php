@@ -1,5 +1,8 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
+
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -209,7 +212,7 @@
             <div class="row">
                <div class="col-md-6">
                   <div class="about_taital_main">
-                     <h1 class="about_taital">About Us</h1>
+                     <h1 class="about_taital">About Us </h1>
                      <p class="about_text">Chrisjem Photography Services ...</p>
                      <div class="readmore_bt"><a href="#">Read More</a></div>
                   </div>
