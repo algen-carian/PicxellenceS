@@ -362,6 +362,51 @@ body {
   font-weight: 500;
 }
 
+.table {
+  position: relative;
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  background: var(--white);
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+.table .imgBx {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.table .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.table table tr td {
+  padding: 12px 10px;
+}
+.table table tr td h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+.table table tr td h4 span {
+  font-size: 14px;
+  color: var(--black2);
+}
+.table table tr:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.table table tr:hover td h4 span {
+  color: var(--white);
+}
+
+/* ====================== RECENT RESERVATION ========================== */
 .recentReservations {
   position: relative;
   display: grid;
@@ -468,3 +513,92 @@ body {
     left: initial;
   }
 }
+
+.page-item{
+  display: inline-block;
+}
+
+.page-item a {
+  color: rgb(18, 54, 173);
+  float: right;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.page-item a.active {
+  background-color: #1a7a92;
+  color: white;
+  border-radius: 5px;
+
+}
+
+
+/* <!-- ========================= PAGENATION and PAGE-ITEM ==================== --> */ 
+
+ul.pagination {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+ul.pagination > li.page-item:before {
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul.pagination li.page-item{
+    position:relative;
+    right:-20px;
+}
+
+li.page-item {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+li.page-item > li.page-item:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+
+.page-item a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+
+
+/* <!-- ========================= PAGENATION ==================== --> */ 
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #1a7a92;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+/* <!-- ========================= ADMIN HISTORY ==================== --> *//* <!-- ========================= ADMIN HISTORY  ==================== --> */
+
+/* <!-- ========================= ADMIN RESERVATION ==================== --> *//* <!-- ========================= ADMIN RESERVATION  ==================== --> */
+
+/* <!-- ========================= ADMIN VIEW EVENT ==================== --> *//* <!-- ========================= ADMIN VIEW EVENT  ==================== --> */
+
+/* <!-- ========================= ADMIN HISTORY ==================== --> *//* <!-- ========================= ADMIN HISTORY  ==================== --> */
+
+
+

@@ -1,0 +1,27 @@
+
+
+/* <!-- ========================= Main ==================== --> */
+.text_permission a{
+    font-size: large;
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+.text_permission th, td { 
+    
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.text_permission tr, td {
+    border: 3px solid;
+    /* background-color: #1A7A92; */
+    background-color: aliceblue;
+	color: #000000;
+	font-size: large;
+	font-weight: bold;
+    font-family:initial;
+    padding:8px;
+}
+
+

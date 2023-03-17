@@ -221,16 +221,16 @@
                             <td>{{$ev->event_status}}</td>
                             <td>
                                 @if($ev->event_status == "Pending")
-                                    <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="btn btn-primary">Approve</button></a>
+                                    <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="custom-btn btn-approve">Approve</button></a>
                                     
-                                    <a href="{{route('updateCancel',$ev->reservation_id)}}"><button class="btn btn-danger">Cancel</button></a>
+                                    <a href="{{route('updateCancel',$ev->reservation_id)}}"><button class="custom-btn btn-cancel">Cancel</button></a>
                                 @endif
                                 @if($ev->event_status == "Approved")
                                     <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="btn btn-success">Finished</button></a>
                                 @endif
                             </td>
                             <td>
-                                    <a href="{{route('viewEvent',$ev->reservation_id)}}"><button class="btn btn-primary">View</button></a>
+                                    <a href="{{route('viewEvent',$ev->reservation_id)}}"><button class="custom-btn btn-cancel">View</button></a>
                             </td>
                         </tr>
                         @endforeach
@@ -239,7 +239,7 @@
                 </table>
                 
                 <nav>
-                    <ul class="pagination" style="float:left; paddding: 2px">
+                    <ul class="pagination" style="float:right; paddding: 2px">
                         <li class="page-item">
                             {!! $Events->appends(['sort' => 'Event_date'])->links() !!}
                         </li>
@@ -294,7 +294,7 @@
                                 <td> 
                                     <button class="custom-btn btn-approve">Approve</button>
                                     <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-view">View</button>
+                                    <button class="custom-btn btn-cancel">View</button>
                                 </td>
             
 
@@ -375,6 +375,19 @@
                                     <button class="custom-btn btn-view">View</button>
                                 </td>
                             </tr>
+     
+                            <tr>
+                                <td>9</td>
+                                <td>Berwyn</td>
+                                <td>berwyn@email.com</td>
+                                <td>2023-01-08</td>
+                                <td><span class="status pending">pending</span></td>
+                                 <td> 
+                                    <button class="custom-btn btn-approve">Approve</button>
+                                    <button class="custom-btn btn-cancel">Cancel</button>
+                                    <button class="custom-btn btn-view">View</button>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="pagination">
@@ -387,6 +400,7 @@
                         <a href="#">6</a>
                         <a href="#">7</a>
                         <a href="#">8</a>
+                        <a href="#">9</a>
                         <a href="#">&raquo;</a>
                     </div>
                 </div> 
