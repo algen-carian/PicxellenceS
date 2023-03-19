@@ -99,7 +99,7 @@
     <!-- ======= Styles ====== -->
     <!-- <link rel="stylesheet" href="assets/css/sidebar3.css"> -->
     <link rel="stylesheet" href="assets/css/sidebar.css">
-
+    <link rel="stylesheet" href="assets/css/Reservation.css">
   
  
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
@@ -196,10 +196,15 @@
                          <img src="../assets/style-lp/images/picxellence.png"alt="">
                 </div>
             </div>
-            <section class="service-section" style="padding:10%;">
-          <div class="text_permission">
-            <div class="container-fluid">
-                <h2>Reservations</h2>
+         
+
+                <div class="service-section">
+                <div class="text_permission">
+                    <div class="container-fluid">
+                        <h2>Recent Reservations</h2>
+                        <a href="Reservation" class="btn-viewall">View All</a>
+                    </div>
+       
                 <table class="table">
                     <thead class="thead-dark">
                     
@@ -211,6 +216,9 @@
                             <th scope="col" colspan="2">Action</th>
                     
                     </thead>
+
+                   
+
                     <tbody>
                         @foreach ($Events as $ev)
                         <tr>
@@ -226,7 +234,7 @@
                                     <a href="{{route('updateCancel',$ev->reservation_id)}}"><button class="custom-btn btn-cancel">Cancel</button></a>
                                 @endif
                                 @if($ev->event_status == "Approved")
-                                    <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="btn btn-success">Finished</button></a>
+                                    <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="custom-btn btn-success">Finished</button></a>
                                 @endif
                             </td>
                             <td>

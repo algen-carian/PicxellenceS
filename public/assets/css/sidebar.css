@@ -298,6 +298,7 @@ body {
   border-radius: 6px;
 }
 
+
 .details table {
   width: 100%;
   border-collapse: collapse;
@@ -306,27 +307,27 @@ body {
 .details table thead td {
   font-weight: 600;
 }
-.details .recentOrders table tr {
+.details .recentReservations table tr {
   color: var(--black1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.details .recentOrders table tr:last-child {
+.details .recentReservations table tr:last-child {
   border-bottom: none;
 }
-.details .recentOrders table tbody tr:hover {
+.details .recentReservations table tbody tr:hover {
   background: var(--blue);
   color: var(--white);
 }
-.details .recentOrders table tr td {
+.details .recentReservations table tr td {
   padding: 10px;
 }
-.details .recentOrders table tr td:last-child {
+.details .recentReservations table tr td:last-child {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(2) {
+.details .recentReservations table tr td:nth-child(2) {
   text-align: end;
 }
-.details .recentOrders table tr td:nth-child(3) {
+.details .recentReservations table tr td:nth-child(3) {
   text-align: center;
 }
 .status.approved {
@@ -337,6 +338,11 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+.status.approved .custom-btn .btn-approve{
+  position: absolute;
+    background-color:#2ed30d;
+ 
+  }
 .status.pending {
   padding: 2px 4px;
   background: #e9b10a;
@@ -405,6 +411,7 @@ body {
 .table table tr:hover td h4 span {
   color: var(--white);
 }
+
 
 /* ====================== RECENT RESERVATION ========================== */
 .recentReservations {
@@ -530,44 +537,6 @@ body {
   border-radius: 5px;
 
 }
-
-
-/* <!-- ========================= PAGENATION and PAGE-ITEM ==================== --> */ 
-
-ul.pagination {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 1em;
-}
-ul.pagination > li.page-item:before {
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-ul.pagination li.page-item{
-    position:relative;
-    right:-20px;
-}
-
-li.page-item {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 1em;
-}
-li.page-item > li.page-item:before {
-  display: inline-block;
-  content: "-";
-  width: 1em;
-  margin-left: -1em;
-}
-
-.page-item a:hover:not(.active) {
-  background-color: #ddd;
-  border-radius: 5px;
-}
-
-
 
 /* <!-- ========================= PAGENATION ==================== --> */ 
 

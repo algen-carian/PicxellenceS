@@ -36,7 +36,7 @@
                 <br>
 
                 <li>
-                    <a href="sidemenu">
+                    <a href="adminAuth">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
