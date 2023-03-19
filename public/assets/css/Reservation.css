@@ -117,7 +117,9 @@
   font-weight: 500;
   border-width : 0;
 }
-
+/* .table .thead-dark th{
+  color: #000000;
+} */
 
 .table {
   position: relative;
