@@ -79,21 +79,16 @@
   text-align: center;
 }
 
-td .custom-btn_btn-approve {
+
+
+.custom-btn_btn-approve {
   padding: 2px 4px;
   background: #77DD77;
   color: var(--white);
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
-}
-.custom-btn_btn-pending{
-  padding: 2px 4px;
-  background: #e9b10a;
-  color: var(--white);
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 500;
+  border-width : 0;
 }
 .custom-btn_btn-cancel {
   padding: 2px 4px;
@@ -102,6 +97,7 @@ td .custom-btn_btn-approve {
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
+  border-width : 0;
 }
 .custom-btn_btn-finished {
   padding: 2px 4px;
@@ -110,6 +106,16 @@ td .custom-btn_btn-approve {
   border-radius: 4px;
   font-size: 14px;
   font-weight: 500;
+  border-width : 0;
+}
+.custom-btn_btn-view{
+  padding: 2px 4px;
+  background: #e9b10a;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  border-width : 0;
 }
 
 
@@ -330,7 +336,7 @@ li.page-item > li.page-item:before {
 }
 
 .page-item a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: #23d0d6;
   border-radius: 5px;
 }
 
