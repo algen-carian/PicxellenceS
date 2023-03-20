@@ -23,7 +23,7 @@
           <div class="row no-gutters">
             <div class="col-md-4">
               <!-- <img src="assets/Photography  Videography.png" style="width:100%;" class="login-card-img"> -->
-              <img src="assets/Photography  Videography.png "class="login-card-img">
+              <img src="assets/event10.jpg"class="login-card-img">
             </div>
 
             <div class="col-md-8">

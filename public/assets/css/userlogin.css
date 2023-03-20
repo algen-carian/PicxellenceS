@@ -20,13 +20,14 @@ body{
 }
 .login-card-img{
   width: 100%;
-  height: 60%;
+  height: 80%;
 
   margin-left: 10%;
   margin-right: 35%;
-  margin-top: 30%;
+  margin-top: 10%;
+  margin-bottom: 20%;
 
-  border-radius: 0;
+  border-radius: 5px;
   position: absolute;
 
   -o-object-fit: cover;
@@ -34,10 +35,14 @@ body{
 }
   .card-body{
 
-  padding: 65px 80px 80px;
-  margin: right;
-  
-  /* padding: 85px 30px 30px; */
+  /* padding: 65px 80px 80px; */
+  /* margin-top: 60%; 
+  margin-right: 0%;
+  margin-bottom: 60%;
+  margin-left: 100%; */
+
+
+  padding: 60px 0px 60px 200px;
     
 }
 
@@ -117,6 +122,9 @@ body{
   margin-bottom: 60px;
 }
 @media (max-width: 622px) {
+ .card-body{
+  padding:0px 0px 0px 0px;
+ }
   .login-card-footer-text{
     margin-bottom: 24px;
   }
