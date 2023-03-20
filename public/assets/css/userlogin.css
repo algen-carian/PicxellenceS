@@ -1,8 +1,9 @@
 body{
   font-family: "karla", sans-serif;
-  background-color: #0c8fa7;
+  background-color: #ffffff;
   min-height: 100vh;
 }
+
 .brand-wrapper{
   margin-bottom: 19px;
 }
@@ -10,9 +11,11 @@ body{
   height: 100px;
 }
 .login-card{
+  background-color: rgb(211, 235, 235);  /* Maaangas na blue-white */
   border: 0;
   border-radius: 27.5px;
-  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  box-shadow: 0 10px 30px 0 rgba(66, 54, 54, 0.43);
+  /* box-shadow:0 4px 10px 4px rgba($form-bg,.3); */
   overflow: hidden;
 }
 .login-card-img{
@@ -29,9 +32,16 @@ body{
   -o-object-fit: cover;
   object-fit: cover;
 }
-.login-card .card-body{
-  padding: 85px 60px 60px;
+  .card-body{
+
+  padding: 65px 80px 80px;
+  margin: right;
+  
+  /* padding: 85px 30px 30px; */
+    
 }
+
+
 @media (max-width: 422px) {
   .login-card .card-body{
     padding: 35px 24px;
@@ -39,10 +49,18 @@ body{
 }
 
 .login-card-description{
-  font-size: 25px;
+  font-size: 30px;
   color: #000;
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 23px;
+  text-align: center;
+
+}
+
+.login-card-description .form-group {
+  right: 15px;
+  position: relative;
+
 }
 .login-card form{
   max-width: 326px;
@@ -56,6 +74,7 @@ body{
   font-size: 13px;
   line-height: 15;
   font-weight: normal;
+  right: 15px;
 }
 .login-card .form-control::-webkit-input-placeholder{
   color: #919aa3;
@@ -97,7 +116,7 @@ body{
   color: #0d2366;
   margin-bottom: 60px;
 }
-@media (max-width: 767px) {
+@media (max-width: 622px) {
   .login-card-footer-text{
     margin-bottom: 24px;
   }
@@ -107,12 +126,27 @@ body{
   color: #919aa3;
 }
 
+#formFooter:hover{
+  background-color: transparent;
+  color: #000;
+
+}
 #formFooter {
-  background-color: #f6f6f6;
+ 
+ 
   border-top: 1px solid #dce8f1;
-  padding: 25px;
-  text-align: center;
+  padding: 10px;
+  text-align: right;
   -webkit-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
+  font-family:Arial, Helvetica, sans-serif
+  
+}
+.back{
+
+  position: absolute;
+  right: 15px;
+
+
 }
 

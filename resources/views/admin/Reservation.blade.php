@@ -217,8 +217,6 @@
                     
                     </thead>
 
-                   
-
                     <tbody>
                         @foreach ($Events as $ev)
                         <tr>
@@ -228,6 +226,9 @@
                             <td>{{$ev->Event_date}}</td>
                             <td>{{$ev->event_status}}</td>
                             <td>
+
+
+                            
                                 @if($ev->event_status == "Pending")
                                     <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="custom-btn_btn-approve">Approve</button></a>
                                     

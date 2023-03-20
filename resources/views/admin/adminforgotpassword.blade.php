@@ -22,8 +22,7 @@
         <div class="card login-card">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <!-- <img src="assets/Photography  Videography.png" style="width:100%;" class="login-card-img"> -->
-              <img src="assets/Photography  Videography.png "class="login-card-img">
+              <img src="assets/Photography  Videography.png" style="width:100%;" class="login-card-img">
             </div>
 
             <div class="col-md-8">
@@ -40,42 +39,51 @@
               </div>
               @endif
 
-
                   <img src="assets/picxellence.png"class="logo">
+              </center>
                 </div>
-              
-                <p class="login-card-description">Sign in</p>
-              
+              <center>
+                <p class="login-card-description">Forgot Password</p>
+              </center>
               <form  method="post" action="/adminAuth">
                 @csrf
-                
                   <div class="form-group" >
                     <label for="email" class="sr-only">Email</label>
                     <input type="email" name="email"  id="email" class="form-control"  placeholder="Email">
                   </div>
                   <div class="form-group mb-4">
-                    <label for="Password" class="sr-only">Password</label>
-                    <input type="password" name="password" id="password" class="form-control"  placeholder="Password">
+                    <label for="Password" class="sr-only">Old Password</label>
+                    <input type="password" name="password" id="password" class="form-control"  placeholder="Old Password">
                   </div>
-                  
-                  <div id="formFooter">
-                          <a class="underlineHover" href="adminforgotpassword">Forgot Password?</a>
+                  <div class="form-group mb-4">
+                    <label for="Reenter Password" class="sr-only">New password</label>
+                    <input type="password" name="password" id="password" class="form-control"  placeholder="New Password">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="Reenter Password" class="sr-only">Reenter Password</label>
+                    <input type="password" name="password" id="password" class="form-control"  placeholder="Reenter Password">
+                  </div>
+
+                  <div id="formFooter"> 
+                          <a class="underlineHover" href="userlogin">Already have an Account?</a>
                   </div>
 
 
-                  <input name="submit" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
-                <!-- Remind Password -->
-                <center>
-                  
+                  <input name="submit" id="login" class="btn btn-block login-btn mb-4" type="submit" value="submit">
+                  <!-- Remind Passowrd -->
+                                    <center>
+                 
 
-                  <script>
+                  <!-- <script>
                   function goBack()
                     {
                     window.history.back()
                     }
                   </script>
-                  Go back to website? <input type="button" value="Back" onclick="goBack()"/>
+                  Go back to website? <input type="button" value="Back" onclick="goBack()"/> -->
                   </center>
+
+                  <a class="back" href="/"> Back to website</a>
                  <!-- <center>
             <button type="submit" class= "btn btn-primary "> login </button>  
           </center>-->

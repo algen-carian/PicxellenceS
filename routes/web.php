@@ -10,6 +10,7 @@ use App\Http\Controllers\adminaboutController;
 use App\Http\Controllers\admineventController;
 use App\Http\Controllers\sidemenuController;
 use App\Http\Controllers\viewEventController;
+use App\Http\Controllers\adminforgotpasswordController;
 
 
 use App\Http\Controllers\userdashboardController;
@@ -74,6 +75,11 @@ Route::get('/sidemenu', function () {
 Route::get('/viewEvent', function () {
     return view('admin.viewEvent');
 });
+//ADMIN FORGOT PASSWORD
+Route::get('/adminforgotpassword', function () {
+    return view('admin.adminforgotpassword');
+});
+
 
 
 
@@ -131,6 +137,10 @@ Route::get('/adminabout',[adminaboutController::class, 'index']);
 Route::get('/admin.sidemenu',[sidemenuController::class, 'store']);
 //ADMINEVENT
 Route::get('/viewevent',[viewEventController::class, 'index']);
+
+//ADMIN FORGOT PASSWORD
+Route::get('/adminforgotpassword',[adminforgotpasswordController::class, 'index']);
+Route::post('/Register',[adminforgotpassword::class, 'store'])->name("Register");
 
 
 //USERSIGNUPFORM

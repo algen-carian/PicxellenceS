@@ -257,7 +257,7 @@
                 <div class="recentReservations">
                     <div class="cardHeader">
                         <h2>Recent Customers</h2>
-                         <a href="adminevent" class="btn">View All</a>
+                         <a href="adminhistory" class="btn">View All</a>
                     </div>
 
                     <table>
