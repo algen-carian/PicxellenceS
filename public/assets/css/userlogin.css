@@ -26,8 +26,9 @@ body{
   margin-right: 35%;
   margin-top: 10%;
   margin-bottom: 20%;
+  padding:85;
 
-  border-radius: 5px;
+  border-radius: 8px;
   position: absolute;
 
   -o-object-fit: cover;
@@ -42,7 +43,7 @@ body{
   margin-left: 100%; */
 
 
-  padding: 60px 0px 60px 200px;
+  padding: 60px 0px 60px 300px;
     
 }
 
@@ -153,7 +154,7 @@ body{
 .back{
 
   position: absolute;
-  right: 15px;
+  right: 150px;
 
 
 }

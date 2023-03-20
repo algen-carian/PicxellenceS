@@ -52,10 +52,6 @@
                     <input type="email" name="email"  id="email" class="form-control"  placeholder="Email">
                   </div>
                   <div class="form-group mb-4">
-                    <label for="Password" class="sr-only">Old Password</label>
-                    <input type="password" name="password" id="password" class="form-control"  placeholder="Old Password">
-                  </div>
-                  <div class="form-group mb-4">
                     <label for="Reenter Password" class="sr-only">New password</label>
                     <input type="password" name="password" id="password" class="form-control"  placeholder="New Password">
                   </div>
