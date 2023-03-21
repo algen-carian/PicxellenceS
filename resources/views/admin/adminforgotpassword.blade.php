@@ -45,6 +45,7 @@
               <center>
                 <p class="login-card-description">Forgot Password</p>
               </center>
+              <center>
               <form  method="post" action="/adminAuth">
                 @csrf
                   <div class="form-group" >
@@ -66,6 +67,7 @@
 
 
                   <input name="submit" id="login" class="btn btn-block login-btn mb-4" type="submit" value="submit">
+               </center>
                   <!-- Remind Passowrd -->
                                     <center>
                  

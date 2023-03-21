@@ -45,7 +45,7 @@
                 </div>
               
                 <p class="login-card-description">Sign in</p>
-              
+                <center>
               <form  method="post" action="/adminAuth">
                 @csrf
                 
@@ -64,18 +64,9 @@
 
 
                   <input name="submit" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
+                </center>
                 <!-- Remind Password -->
-                <center>
-                  
-
-                  <script>
-                  function goBack()
-                    {
-                    window.history.back()
-                    }
-                  </script>
-                  Go back to website? <input type="button" value="Back" onclick="goBack()"/>
-                  </center>
+                  <a class="back" href="/"> Back to website</a>
                  <!-- <center>
             <button type="submit" class= "btn btn-primary "> login </button>  
           </center>-->
@@ -85,12 +76,6 @@
                 <!-- <a href="signupform" class="forgot-password-link">Forgot password</a>
                 <p class="login-card-footer-text">Don't have an account? <a href="signupform" class="text-reset">Register here</a></p> -->
                 <nav class="login-card-footer-nav">
-                <center>
-            <!-- <a href="adminlogin" style="color:Black" class="btn mt-n1">Admin Login</a> -->
-            <br>
-            <!-- <a href="#" style="color:black" class="btn mt-n1">Forgot password?</a> -->
-            <br>
-               </center>
                   <a href="#!">Developed by.</a>
                   <a href="#!">Algen&Me</a>
                 </nav>

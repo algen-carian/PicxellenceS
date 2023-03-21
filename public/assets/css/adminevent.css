@@ -52,10 +52,7 @@
   }
   table .thead-dark th td tbody tr{
         margin:left;
-  }
-  tr th td{
 
-    
   }
   .table  tbody th td tr:hover {
     background: var(--blue);
