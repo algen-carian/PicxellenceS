@@ -10,7 +10,7 @@
 
      <!-- ======= Styles ====== -->
      <link rel="stylesheet" href="assets/css/sidebar.css">
-     <link rel="stylesheet" href="assets/css/adminhistory.scss">
+     <link rel="stylesheet" href="assets/css/adminhistory.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -107,11 +107,11 @@
     
 
 
-        <section class="service-section" style="padding:10%;">
+        <section class="service-section" style="padding:5%;">
           <div class="text_permission">
             <div class="container-fluid">
                 <h2>History</h2>
-                <table class="table">
+                <table class="">
                     <thead class="thead-dark">
                     
                             <th scope="col">#</th>
@@ -138,7 +138,7 @@
                             </td>
                             <td>{{$ev->Event_date}}</td>
                             <td>
-                                    <a href="{{route('viewEvent',$ev->reservation_id)}}"><button class="btn btn-primary">View</button></a>
+                                    <a href="{{route('viewEvent',$ev->reservation_id)}}"><button class="custom-btn_btn-view">View</button></a>
                             </td>
                         </tr>
                         @endforeach
@@ -147,7 +147,7 @@
                 </table>
                 
                 <nav>
-                    <ul class="pagination" style="float:right;">
+                    <ul class="pagination" style="float:right; paddding: 2px">
                         <li class="page-item">
                             {!! $Events->appends(['sort' => 'Event_date'])->links() !!}
                         </li>

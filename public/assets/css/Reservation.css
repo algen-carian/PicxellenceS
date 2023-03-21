@@ -8,11 +8,11 @@
   width: 100%;
   padding: 20px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 10px;
-  margin-top: 10px;
+  /* grid-template-columns: 2fr 1fr;
+  grid-gap: 10px; */
+  /* margin-top: 10px; */
+  margin: auto;
 }
-
 .service-section .text_permission {
   position: relative;
   display: grid;
@@ -47,39 +47,32 @@
   border-collapse: collapse;
   margin-top: 10px;
 }
-.service-section table .thead-dark th td {
-  font-weight: 600;
-  border: 1px solid black;
-  background-color: none;
- 
 
-}
-.service-section .text_permission table .thead-dark th td tr {
+
+/* table th td tr {
   color: var(--black1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.service-section .text_permission table .thead-dark th td tr:last-child {
+table  th td tr:last-child {
   border-bottom: none;
 }
-.service-section .text_permission table  tbody .thead-dark th td tr:hover {
+ table  tbody th td tr:hover {
   background: var(--blue);
   color: var(--white);
   
 }
-.service-section .text_permission table .thead-dark th td tr th {
+ table .thead-dark th td tr th {
   padding: 10px;
 }
-.service-section .text_permission table .thead-dark th td tr th:last-child {
+ table .thead-dark th td tr th:last-child {
   text-align: end;
 }
-.service-section .text_permission table .thead-dark th td tr th:nth-child(2) {
+.thead-dark th td tr th:nth-child(2) {
   text-align: end;
 }
-.service-section .text_permission table .thead-dark th td tr th:nth-child(3) {
+.thead-dark th td tr th:nth-child(3) {
   text-align: center;
-}
-
-
+} */
 
 
 .custom-btn_btn-approve {
@@ -91,7 +84,7 @@
   font-weight: 500;
   border-width : 0;
 }
-.custom-btn_btn-cancel {
+ .custom-btn_btn-cancel {
   padding: 2px 4px;
   background: #f00;
   color: var(--white);
@@ -109,7 +102,7 @@
   font-weight: 500;
   border-width : 0;
 }
-.custom-btn_btn-view{
+.custom-btn_btn-view {
   padding: 2px 4px;
   background: #e9b10a;
   color: var(--white);
@@ -118,18 +111,25 @@
   font-weight: 500;
   border-width : 0;
 }
+.custom-btn_btn-view:hover, 
+.custom-btn_btn-finished:hover, 
+.custom-btn_btn-cancel:hover,
+.custom-btn_btn-approve:hover
+{
+  cursor: pointer;
+}
 
 
-.table {
+/* .table {
   position: relative;
   display: grid;
   min-height: 500px;
   padding: 20px;
   background: var(--white);
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 7px 25px rgba(94, 81, 81, 0.623);
   border-radius: 20px;
-}
-.table .imgBx {
+} */
+/* .table .imgBx {
   position: relative;
   width: 40px;
   height: 40px;
@@ -162,6 +162,19 @@
 }
 .table table tr:hover td h4 span {
   color: var(--white);
+} */
+.lamesa th{
+  text-align: left;
+}
+.lamesa tr th:hover{
+  background-color: none !important;
+}
+.lamesa th:nth-child(6){
+  text-align: center;
+}
+.lamesa tbody tr td:nth-child(6){
+    /* text-align: left; */
+    text-align: center;
 }
 
 /* ====================== RECENT RESERVATION ========================== */
@@ -208,6 +221,8 @@
 .text_permission table tr:hover td h4 span {  
   color: var(--white);
 }
+
+
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {

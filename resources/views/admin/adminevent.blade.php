@@ -10,6 +10,7 @@
 
     <!-- ======= Styles ====== -->
     <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/adminevent.css">
  
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -113,39 +114,39 @@
 
         <!-- side -->
 
-        <section class="service-section" style="padding:10%;">
+        <section class="service-section" style="padding:5%;">
           <div class="text_permission">
             <div class="container-fluid">
                 <h2>Events</h2>
                     <br>
-                        <div class="container" style="float:right;">
-                                <form action="{{route('addEvent')}}" method="post">
+                        <div class="container" >
+                                <form  class="pigura" action="{{route('addEvent')}}" method="post">
                                     @csrf
-                                        <div style="float:left;margin-right:2%;">
+                                        <div >
                                             Title:
                                             <input name="event_title" id="event_title" type="text" class="form-control" >
                                         </div>
 
-                                        <div style="float:left;margin-right:2%;">
+                                        <div >
                                             Content:
                                             <select name="event_content" id="event_content" class="form-control">
                                                 <option>Event</ption>
                                                 <option>Services</ption>
+                                                
                                             </select>
                                         </div>
 
-                                        <div style="float:left;margin-right:2%;">
+                                        <div>
                                             Price:
                                             <input name="event_price" id="event_price" type="text" class="form-control">
                                         </div>
-                                        <div style="float:left;margin-right:2%;">
-                                            <br>
+                                        <div >
                                             <button class='btn btn-primary'>Add</button>
                                         </div>
                                 </form>
                         </div>
                 <br>
-                <table class="table">
+                <table class="lamesa">
                     <thead class="thead-dark">
                     
                             <th scope="col">#</th>

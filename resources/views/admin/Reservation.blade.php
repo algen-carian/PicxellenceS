@@ -198,23 +198,23 @@
             </div>
          
 
-                <div class="service-section">
-                <div class="text_permission">
+            <div class="service-section"  style="padding:5%;">
+                <div class="text_permission">   
                     <div class="container-fluid">
                         <h2>Recent Reservations</h2>
                         <a href="Reservation" class="btn-viewall">View All</a>
                     </div>
        
-                <table class="table">
+                <table class="lamesa">
                     <thead class="thead-dark">
-                    
+                        <tr>
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Event Date</th>
                             <th scope="col">Status</th>
                             <th scope="col" colspan="2">Action</th>
-                    
+                        </tr>
                     </thead>
 
                     <tbody>
@@ -226,8 +226,6 @@
                             <td>{{$ev->Event_date}}</td>
                             <td>{{$ev->event_status}}</td>
                             <td>
-
-
                             
                                 @if($ev->event_status == "Pending")
                                     <a href="{{route('updateStatus',$ev->reservation_id)}}"><button class="custom-btn_btn-approve">Approve</button></a>
@@ -288,9 +286,9 @@
                                 <td>2023-01-08</td>
                                 <td><span class="status approved">Approved</span></td>
                                 <td> 
-                                    <button class="custom-btn btn-approve">Approve</button>
-                                    <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-view">View</button>
+                                    <button class="custom-btn_btn-approve">Approve</button>
+                                    <button class="custom-btn_btn-cancel">Cancel</button>
+                                    <button class="custom-btn_btn-view">View</button>
                                 </td>
             
                                 
@@ -301,9 +299,9 @@
                                 <td>2023-01-08</td>
                                 <td><span class="status pending">Pending</span></td>
                                 <td> 
-                                    <button class="custom-btn btn-approve">Approve</button>
-                                    <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-cancel">View</button>
+                                    <button class="custom-btn_btn-approve">Approve</button>
+                                    <button class="custom-btn_btn-cancel">Cancel</button>
+                                    <button class="custom-btn_btn-cancel">View</button>
                                 </td>
             
 
@@ -314,9 +312,9 @@
                                 <td>2023-01-08</td>
                                 <td><span class="status cancelled">Cancelled</span></td>
                                  <td> 
-                                    <button class="custom-btn btn-approve">Approve</button>
-                                    <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-view">View</button>
+                                    <button class="custom-btn_btn-approve">Approve</button>
+                                    <button class="custom-btn_btn-cancel">Cancel</button>
+                                    <button class="custom-btn_btn-view">View</button>
                                 </td>
                             </tr>
 
@@ -327,9 +325,9 @@
                                 <td>2023-01-08</td>
                                 <td><span class="status inProgress">In Progress</span></td>
                                  <td> 
-                                    <button class="custom-btn btn-approve">Approve</button>
-                                    <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-view">View</button>
+                                    <button class="custom-btn_btn-approve">Approve</button>
+                                    <button class="custom-btn_btn-cancel">Cancel</button>
+                                    <button class="custom-btn_btn-view">View</button>
                                 </td>
                             </tr>
 
@@ -340,9 +338,9 @@
                                 <td>2023-01-08</td>
                                 <td><span class="status approved">Approved</span></td>
                                  <td> 
-                                    <button class="custom-btn btn-approve">Approve</button>
-                                    <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-view">View</button>
+                                    <button class="custom-btn_btn-approve">Approve</button>
+                                    <button class="custom-btn_btn-cancel">Cancel</button>
+                                    <button class="custom-btn_btn-view">View</button>
                                 </td>
                             </tr>
 
@@ -353,9 +351,9 @@
                                 <td>2023-01-08</td>
                                 <td><span class="status pending">Pending</span></td>
                                  <td> 
-                                    <button class="custom-btn btn-approve">Approve</button>
-                                    <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-view">View</button>
+                                    <button class="custom-btn_btn-approve">Approve</button>
+                                    <button class="custom-btn_btn-cancel">Cancel</button>
+                                    <button class="custom-btn_btn-view">View</button>
                                 </td>
                             </tr>
 
@@ -366,9 +364,9 @@
                                 <td>2023-01-08</td>
                                 <td><span class="status cancelled">Cancelled</span></td>
                                  <td> 
-                                    <button class="custom-btn btn-approve">Approve</button>
-                                    <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-view">View</button>
+                                    <button class="custom-btn_btn-approve">Approve</button>
+                                    <button class="custom-btn_btn-cancel">Cancel</button>
+                                    <button class="custom-btn_btn-view">View</button>
                                 </td>
                             </tr>
 
@@ -379,9 +377,9 @@
                                 <td>2023-01-08</td>
                                 <td><span class="status inProgress">In Progress</span></td>
                                  <td> 
-                                    <button class="custom-btn btn-approve">Approve</button>
-                                    <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-view">View</button>
+                                    <button class="custom-btn_btn-approve">Approve</button>
+                                    <button class="custom-btn_btn-cancel">Cancel</button>
+                                    <button class="custom-btn_btn-view">View</button>
                                 </td>
                             </tr>
      
@@ -392,9 +390,9 @@
                                 <td>2023-01-08</td>
                                 <td><span class="status pending">pending</span></td>
                                  <td> 
-                                    <button class="custom-btn btn-approve">Approve</button>
-                                    <button class="custom-btn btn-cancel">Cancel</button>
-                                    <button class="custom-btn btn-view">View</button>
+                                    <button class="custom-btn_btn-approve">Approve</button>
+                                    <button class="custom-btn_btn-cancel">Cancel</button>
+                                    <button class="custom-btn_btn-view">View</button>
                                 </td>
                             </tr>
                         </tbody>
