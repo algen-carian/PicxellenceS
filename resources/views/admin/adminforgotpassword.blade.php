@@ -82,21 +82,10 @@
                   </center>
 
                   <a class="back" href="/"> Back to website</a>
-                 <!-- <center>
-            <button type="submit" class= "btn btn-primary "> login </button>  
-          </center>-->
-
 
                 </form>
-                <!-- <a href="signupform" class="forgot-password-link">Forgot password</a>
-                <p class="login-card-footer-text">Don't have an account? <a href="signupform" class="text-reset">Register here</a></p> -->
+                <br>
                 <nav class="login-card-footer-nav">
-                <center>
-            <!-- <a href="adminlogin" style="color:Black" class="btn mt-n1">Admin Login</a> -->
-            <br>
-            <!-- <a href="#" style="color:black" class="btn mt-n1">Forgot password?</a> -->
-            <br>
-               </center>
                   <a href="#!">Developed by.</a>
                   <a href="#!">Algen&Me</a>
                 </nav>
