@@ -259,7 +259,7 @@
 
         
             <!-- ================ Reservation List ================= -->
-            <div class="details">
+            <!-- <div class="details">
                 <div class="recentReservations">
                     <div class="cardHeader">
                         <h2>Recent Reservations</h2>
@@ -410,7 +410,7 @@
                         <a href="#">9</a>
                         <a href="#">&raquo;</a>
                     </div>
-                </div> 
+                </div>  -->
 
     <!-- ========== Scripts =========  -->
     

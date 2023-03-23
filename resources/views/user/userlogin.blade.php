@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!----CSS link----->
     <link rel="stylesheet" href="../assets/css/userlogin.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -21,9 +23,10 @@
       <div class="container">
         <div class="card login-card">
           <div class="row no-gutters">
-            <div class="col-md-4">
+            <div class="col-md-4 Logobackground" >
+
               <!-- <img src="assets/Photography  Videography.png" style="width:100%;" class="login-card-img"> -->
-              <img src="assets/event10.jpg"class="login-card-img">
+              <img src="assets/picxellence.png"class="">
             </div>
 
             <div class="col-md-8">
@@ -49,42 +52,43 @@
               <form  method="post" action="/adminAuth">
                 @csrf
                 
-                  <div class="form-group" >
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" name="email"  id="email" class="form-control"  placeholder="Email">
+                  <div class="form-group">
+                  <!-- <i class="fa fa-envelope icon"> </i> -->
+                 <label for="email" class="sr-only" >Email</label> 
+                    
+                    <input type="email" name="email"  id="email" class="form-control"   placeholder="Email">
+                    
                   </div>
                   <div class="form-group mb-4">
                     <label for="Password" class="sr-only">Password</label>
+                    
                     <input type="password" name="password" id="password" class="form-control"  placeholder="Password">
                   </div>
                   
+
+                  <input name="submit" id="login" class="btn btn-block login-btn " type="submit" value="Login">
+
                   <div id="formFooter">
                           <a class="underlineHover" href="adminforgotpassword">Forgot Password?</a>
                   </div>
-
-
-                  <input name="submit" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
+                  <!-- <a class="back" href="/"> Back to website</a> -->
                 </center>
                 <!-- Remind Password -->
-                  <a class="back" href="/"> Back to website</a>
-                 <!-- <center>
-            <button type="submit" class= "btn btn-primary "> login </button>  
-          </center>-->
-
-
-                </form>
-                <!-- <a href="signupform" class="forgot-password-link">Forgot password</a>
-                <p class="login-card-footer-text">Don't have an account? <a href="signupform" class="text-reset">Register here</a></p> -->
-                <nav class="login-card-footer-nav">
-                  <a href="#!">Developed by.</a>
-                  <a href="#!">Algen&Me</a>
-                </nav>
+                 
+                <a class="back" href="/"> Back to website</a>
+                </form>    
               </div>
             </div>
+            <!-- <footer>
+          <a href="#!">Developed by.</a>
+          <a href="#!">Algen&Me</a>
+        </footer>  -->
           </div>
-        </div>
-      </div>
+        </div>      
+      </div>     
     </main>
-
+    
+   
   </body>
+        
 </html>

@@ -97,7 +97,7 @@
                 <div class="search">
                     <label>
                         <input type="text" placeholder="Search here">
-             
+                        <button type="submit">Search</button>
                     </label>
                 </div>
 

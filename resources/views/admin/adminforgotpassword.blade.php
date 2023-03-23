@@ -61,13 +61,14 @@
                     <input type="password" name="password" id="password" class="form-control"  placeholder="Reenter Password">
                   </div>
 
-                  <div id="formFooter"> 
-                          <a class="underlineHover" href="userlogin">Already have an Account?</a>
-                  </div>
+                 
 
 
                   <input name="submit" id="login" class="btn btn-block login-btn mb-4" type="submit" value="submit">
-               </center>
+                  <div id="formFooter"> 
+                          <a class="underlineHover" href="userlogin">Already have an Account?</a>
+                  </div>
+                </center>
                   <!-- Remind Passowrd -->
                                     <center>
                  
@@ -85,9 +86,9 @@
 
                 </form>
                 <br>
-                <nav class="login-card-footer-nav">
+                <!-- <nav class="login-card-footer-nav">
                   <a href="#!">Developed by.</a>
-                  <a href="#!">Algen&Me</a>
+                  <a href="#!">Algen&Me</a> -->
                 </nav>
               </div>
             </div>
