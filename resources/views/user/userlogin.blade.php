@@ -26,7 +26,7 @@
             <div class="col-md-4 Logobackground" >
 
               <!-- <img src="assets/Photography  Videography.png" style="width:100%;" class="login-card-img"> -->
-              <img src="assets/picxellence.png"class="">
+              <img src="assets/picxellence.png"class="logolang">
             </div>
 
             <div class="col-md-8">
